@@ -1,0 +1,14 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "bac077e49662b08a0be48bc7bd099a1f"
+build_time: [576765725, 702435000]
+inputs:
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/AudioEngine.swift": [569946079, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/ViewController.swift": [576765725, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/noteInfo.swift": [576432881, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/settingsVCViewController.swift": [576683672, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/fileViewController.swift": [576765162, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/AppDelegate.swift": [569941933, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/recordingData.swift": [576763881, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/constants.swift": [576669696, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/tunerViewController.swift": [576682812, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/customTableViewCell.swift": [576764285, 0]

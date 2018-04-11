@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "973ce543c56a067e6547c9c2f289311f"
+build_time: [576087500, 33805000]
+inputs:
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/AudioEngine.swift": [569946079, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/ViewController.swift": [576087432, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/settingsVCViewController.swift": [576087499, 0]
+  "/Users/Connor/Documents/Developer/GuitarTuner/GuitarTuner/AppDelegate.swift": [569941933, 0]
