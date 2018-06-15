@@ -12,8 +12,6 @@
 		B335FF04207925060096D19A /* noteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B335FF03207925060096D19A /* noteInfo.swift */; };
 		B335FF08207A6CD80096D19A /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B335FF07207A6CD80096D19A /* constants.swift */; };
 		B335FF0A207A880C0096D19A /* tunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B335FF09207A880C0096D19A /* tunerViewController.swift */; };
-		B335FF0C207A8D350096D19A /* semicircle.png in Resources */ = {isa = PBXBuildFile; fileRef = B335FF0B207A8D350096D19A /* semicircle.png */; };
-		B335FF0E207A8E790096D19A /* tunerPointer.png in Resources */ = {isa = PBXBuildFile; fileRef = B335FF0D207A8E790096D19A /* tunerPointer.png */; };
 		B3408204206FECD500D6CE4E /* SCOM.png in Resources */ = {isa = PBXBuildFile; fileRef = B3408203206FECD500D6CE4E /* SCOM.png */; };
 		B3408206207007AD00D6CE4E /* SOTW.png in Resources */ = {isa = PBXBuildFile; fileRef = B3408205207007AD00D6CE4E /* SOTW.png */; };
 		B35140722073DB7E00AA488E /* settingsVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35140712073DB7E00AA488E /* settingsVCViewController.swift */; };
@@ -31,6 +29,11 @@
 		B3AEC26C207E32E7009351CD /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC26B207E32E7009351CD /* customTableViewCell.swift */; };
 		B3AEC26E207E347C009351CD /* fileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC26D207E347C009351CD /* fileViewController.swift */; };
 		B3AEC270207E37EA009351CD /* dummy.wav in Resources */ = {isa = PBXBuildFile; fileRef = B3AEC26F207E37EA009351CD /* dummy.wav */; };
+		B3AEC27420800E32009351CD /* audioEngineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC27320800E32009351CD /* audioEngineDelegate.swift */; };
+		B3AEC2762080C4E1009351CD /* calibrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC2752080C4E1009351CD /* calibrationViewController.swift */; };
+		B3D42994208370E300FBADAE /* SNA.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D42993208370E300FBADAE /* SNA.png */; };
+		B3D429962084AB5100FBADAE /* ESM.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D429952084AB5100FBADAE /* ESM.png */; };
+		B3D429982084D33500FBADAE /* BJN.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D429972084D33500FBADAE /* BJN.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +73,6 @@
 		B335FF03207925060096D19A /* noteInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteInfo.swift; sourceTree = "<group>"; };
 		B335FF07207A6CD80096D19A /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		B335FF09207A880C0096D19A /* tunerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tunerViewController.swift; sourceTree = "<group>"; };
-		B335FF0B207A8D350096D19A /* semicircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = semicircle.png; sourceTree = "<group>"; };
-		B335FF0D207A8E790096D19A /* tunerPointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tunerPointer.png; sourceTree = "<group>"; };
 		B3408203206FECD500D6CE4E /* SCOM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SCOM.png; sourceTree = "<group>"; };
 		B3408205207007AD00D6CE4E /* SOTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SOTW.png; sourceTree = "<group>"; };
 		B35140712073DB7E00AA488E /* settingsVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsVCViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +95,11 @@
 		B3AEC26B207E32E7009351CD /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 		B3AEC26D207E347C009351CD /* fileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileViewController.swift; sourceTree = "<group>"; };
 		B3AEC26F207E37EA009351CD /* dummy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dummy.wav; sourceTree = "<group>"; };
+		B3AEC27320800E32009351CD /* audioEngineDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioEngineDelegate.swift; sourceTree = "<group>"; };
+		B3AEC2752080C4E1009351CD /* calibrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calibrationViewController.swift; sourceTree = "<group>"; };
+		B3D42993208370E300FBADAE /* SNA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SNA.png; sourceTree = "<group>"; };
+		B3D429952084AB5100FBADAE /* ESM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ESM.png; sourceTree = "<group>"; };
+		B3D429972084D33500FBADAE /* BJN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BJN.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B32D01DB20854A2200D084FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B36D5A6220161AAD00060D90 /* ViewController.swift */,
+				B3AEC2752080C4E1009351CD /* calibrationViewController.swift */,
+				B35140712073DB7E00AA488E /* settingsVCViewController.swift */,
+				B335FF09207A880C0096D19A /* tunerViewController.swift */,
+				B3AEC26D207E347C009351CD /* fileViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B32D01DD20854A5C00D084FA /* Audio Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B3AEC27320800E32009351CD /* audioEngineDelegate.swift */,
+				B36D5A9220161ADA00060D90 /* AudioEngine.swift */,
+			);
+			name = "Audio Engine";
+			sourceTree = "<group>";
+		};
+		B32D01DE20854A6F00D084FA /* Global Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B335FF07207A6CD80096D19A /* constants.swift */,
+				B335FF03207925060096D19A /* noteInfo.swift */,
+				B3AEC269207E308C009351CD /* recordingData.swift */,
+				B3AEC26B207E32E7009351CD /* customTableViewCell.swift */,
+			);
+			name = "Global Data Classes";
+			sourceTree = "<group>";
+		};
 		B36D5A5420161AAD00060D90 = {
 			isa = PBXGroup;
 			children = (
@@ -146,26 +184,21 @@
 		B36D5A5F20161AAD00060D90 /* GuitarTuner */ = {
 			isa = PBXGroup;
 			children = (
-				B3AEC26F207E37EA009351CD /* dummy.wav */,
-				B35140712073DB7E00AA488E /* settingsVCViewController.swift */,
-				B335FF09207A880C0096D19A /* tunerViewController.swift */,
 				B36D5A6020161AAD00060D90 /* AppDelegate.swift */,
-				B36D5A6220161AAD00060D90 /* ViewController.swift */,
-				B335FF07207A6CD80096D19A /* constants.swift */,
-				B335FF03207925060096D19A /* noteInfo.swift */,
-				B36D5A9220161ADA00060D90 /* AudioEngine.swift */,
-				B3AEC269207E308C009351CD /* recordingData.swift */,
-				B3AEC26D207E347C009351CD /* fileViewController.swift */,
-				B3AEC26B207E32E7009351CD /* customTableViewCell.swift */,
+				B32D01DE20854A6F00D084FA /* Global Data Classes */,
+				B32D01DD20854A5C00D084FA /* Audio Engine */,
+				B32D01DB20854A2200D084FA /* ViewControllers */,
 				B36D5A6420161AAD00060D90 /* Main.storyboard */,
 				B36D5A6920161AAD00060D90 /* LaunchScreen.storyboard */,
 				B36D5A6720161AAD00060D90 /* Assets.xcassets */,
 				B36D5A6C20161AAD00060D90 /* Info.plist */,
 				B3408203206FECD500D6CE4E /* SCOM.png */,
+				B3D429972084D33500FBADAE /* BJN.png */,
+				B3D429952084AB5100FBADAE /* ESM.png */,
+				B3D42993208370E300FBADAE /* SNA.png */,
 				B3408205207007AD00D6CE4E /* SOTW.png */,
+				B3AEC26F207E37EA009351CD /* dummy.wav */,
 				B335FF01207908330096D19A /* gtrSample.wav */,
-				B335FF0B207A8D350096D19A /* semicircle.png */,
-				B335FF0D207A8E790096D19A /* tunerPointer.png */,
 				B335FEFF2078FBCB0096D19A /* Sounds */,
 			);
 			path = GuitarTuner;
@@ -303,15 +336,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D429982084D33500FBADAE /* BJN.png in Resources */,
 				B335FF002078FBCB0096D19A /* Sounds in Resources */,
 				B3AEC270207E37EA009351CD /* dummy.wav in Resources */,
-				B335FF0C207A8D350096D19A /* semicircle.png in Resources */,
 				B36D5A6B20161AAD00060D90 /* LaunchScreen.storyboard in Resources */,
 				B36D5A6820161AAD00060D90 /* Assets.xcassets in Resources */,
-				B335FF0E207A8E790096D19A /* tunerPointer.png in Resources */,
 				B3408206207007AD00D6CE4E /* SOTW.png in Resources */,
+				B3D429962084AB5100FBADAE /* ESM.png in Resources */,
 				B335FF02207908330096D19A /* gtrSample.wav in Resources */,
 				B3408204206FECD500D6CE4E /* SCOM.png in Resources */,
+				B3D42994208370E300FBADAE /* SNA.png in Resources */,
 				B36D5A6620161AAD00060D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,11 +372,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36D5A9320161ADA00060D90 /* AudioEngine.swift in Sources */,
+				B3AEC2762080C4E1009351CD /* calibrationViewController.swift in Sources */,
 				B36D5A6320161AAD00060D90 /* ViewController.swift in Sources */,
 				B335FF04207925060096D19A /* noteInfo.swift in Sources */,
 				B35140722073DB7E00AA488E /* settingsVCViewController.swift in Sources */,
 				B3AEC26E207E347C009351CD /* fileViewController.swift in Sources */,
 				B36D5A6120161AAD00060D90 /* AppDelegate.swift in Sources */,
+				B3AEC27420800E32009351CD /* audioEngineDelegate.swift in Sources */,
 				B3AEC26A207E308C009351CD /* recordingData.swift in Sources */,
 				B335FF08207A6CD80096D19A /* constants.swift in Sources */,
 				B335FF0A207A880C0096D19A /* tunerViewController.swift in Sources */,

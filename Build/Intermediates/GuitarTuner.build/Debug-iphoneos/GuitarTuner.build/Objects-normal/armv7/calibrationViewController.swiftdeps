@@ -1,0 +1,1242 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "calibrationViewController"
+provides-nominal:
+- "C11GuitarTuner25calibrationViewController"
+provides-member:
+- ["C11GuitarTuner25calibrationViewController", ""]
+provides-dynamic-lookup:
+- "alertInit"
+- "ampTracker"
+- "avgSum"
+- "calibratedAvg"
+- "calibrationSuccessAlert"
+- "count"
+- "exitVC"
+- "finishCalibrating"
+- "freqTracker"
+- "getAverage"
+- "isCalibratingInput"
+- "listen"
+- "mic"
+- "notCalibratedAlert"
+- "silence"
+- "startCalibrating"
+- "timeSlider"
+- "timer"
+- "viewDidLoad"
+- "wasCalibrated"
+depends-top-level:
+- !private "!"
+- !private "*"
+- !private "+="
+- !private "/"
+- !private "<="
+- "AKAmplitudeTracker"
+- "AKBooster"
+- "AKFrequencyTracker"
+- "AKMicrophone"
+- "AssignmentPrecedence"
+- !private "AudioKit"
+- "BooleanLiteralType"
+- "Double"
+- !private "Float"
+- "Int"
+- !private "StringLiteralType"
+- "Timer"
+- !private "UIAlertAction"
+- "UIAlertController"
+- "UIButton"
+- !private "UIImage"
+- "UISlider"
+- "UIViewController"
+- "calibrationViewController"
+- "constants"
+- !private "print"
+depends-member:
+- !private ["C8AudioKit18AKAmplitudeTracker", "amplitude"]
+- !private ["C8AudioKit18AKAmplitudeTracker", "init"]
+- !private ["C8AudioKit9AKBooster", "init"]
+- !private ["P8AudioKit11AKComponent", "amplitude"]
+- !private ["P8AudioKit11AKComponent", "init"]
+- !private ["C8AudioKit18AKFrequencyTracker", "init"]
+- !private ["C8AudioKit12AKMicrophone", "init"]
+- !private ["C8AudioKit6AKNode", "amplitude"]
+- !private ["P8AudioKit11AKParameter", "init"]
+- !private ["P8AudioKit12AKToggleable", "amplitude"]
+- !private ["P8AudioKit12AKToggleable", "init"]
+- !private ["P8AudioKit11AUComponent", "amplitude"]
+- !private ["P8AudioKit11AUComponent", "init"]
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["P8AudioKit7Aliased", "amplitude"]
+- !private ["P8AudioKit7Aliased", "init"]
+- !private ["Ps9AnyObject", "AKAmplitudeTracker"]
+- !private ["Ps9AnyObject", "AKBooster"]
+- !private ["Ps9AnyObject", "AKFrequencyTracker"]
+- !private ["Ps9AnyObject", "AKMicrophone"]
+- !private ["Ps9AnyObject", "AudioKit"]
+- !private ["Ps9AnyObject", "Float"]
+- !private ["Ps9AnyObject", "Timer"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "alertInit"]
+- !private ["Ps9AnyObject", "ampTracker"]
+- !private ["Ps9AnyObject", "amplitude"]
+- !private ["Ps9AnyObject", "amplitudeThreshold"]
+- !private ["Ps9AnyObject", "avgSum"]
+- !private ["Ps9AnyObject", "calibratedAvg"]
+- !private ["Ps9AnyObject", "calibrationSuccessAlert"]
+- ["Ps9AnyObject", "constants"]
+- !private ["Ps9AnyObject", "count"]
+- !private ["Ps9AnyObject", "dismiss"]
+- !private ["Ps9AnyObject", "finishCalibrating"]
+- !private ["Ps9AnyObject", "freqTracker"]
+- !private ["Ps9AnyObject", "getAverage"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isCalibratingInput"]
+- !private ["Ps9AnyObject", "isEnabled"]
+- !private ["Ps9AnyObject", "isHidden"]
+- !private ["Ps9AnyObject", "listen"]
+- !private ["Ps9AnyObject", "mic"]
+- !private ["Ps9AnyObject", "notCalibratedAlert"]
+- !private ["Ps9AnyObject", "output"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "scheduledTimer"]
+- !private ["Ps9AnyObject", "setThumbImage"]
+- ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "silence"]
+- !private ["Ps9AnyObject", "start"]
+- !private ["Ps9AnyObject", "timeSlider"]
+- !private ["Ps9AnyObject", "timer"]
+- !private ["Ps9AnyObject", "value"]
+- !private ["Ps9AnyObject", "varData"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "wasCalibrated"]
+- ["Ps9AnyObject", ""]
+- !private ["C8AudioKit8AudioKit", "output"]
+- !private ["C8AudioKit8AudioKit", "start"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "isEnabled"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- !private ["PSo15CALayerDelegate", "setThumbImage"]
+- !private ["PSo15CALayerDelegate", "value"]
+- !private ["Ps7CVarArg", "AKAmplitudeTracker"]
+- !private ["Ps7CVarArg", "AKBooster"]
+- !private ["Ps7CVarArg", "AKFrequencyTracker"]
+- !private ["Ps7CVarArg", "AKMicrophone"]
+- !private ["Ps7CVarArg", "AudioKit"]
+- !private ["Ps7CVarArg", "Float"]
+- !private ["Ps7CVarArg", "Timer"]
+- !private ["Ps7CVarArg", "UIAlertAction"]
+- !private ["Ps7CVarArg", "UIAlertController"]
+- !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "addAction"]
+- !private ["Ps7CVarArg", "alertInit"]
+- !private ["Ps7CVarArg", "ampTracker"]
+- !private ["Ps7CVarArg", "amplitude"]
+- !private ["Ps7CVarArg", "avgSum"]
+- !private ["Ps7CVarArg", "calibratedAvg"]
+- !private ["Ps7CVarArg", "calibrationSuccessAlert"]
+- ["Ps7CVarArg", "constants"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "dismiss"]
+- !private ["Ps7CVarArg", "finishCalibrating"]
+- !private ["Ps7CVarArg", "freqTracker"]
+- !private ["Ps7CVarArg", "getAverage"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isCalibratingInput"]
+- !private ["Ps7CVarArg", "isEnabled"]
+- !private ["Ps7CVarArg", "isHidden"]
+- !private ["Ps7CVarArg", "listen"]
+- !private ["Ps7CVarArg", "mic"]
+- !private ["Ps7CVarArg", "notCalibratedAlert"]
+- !private ["Ps7CVarArg", "output"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "scheduledTimer"]
+- !private ["Ps7CVarArg", "setThumbImage"]
+- !private ["Ps7CVarArg", "silence"]
+- !private ["Ps7CVarArg", "start"]
+- !private ["Ps7CVarArg", "timeSlider"]
+- !private ["Ps7CVarArg", "timer"]
+- !private ["Ps7CVarArg", "value"]
+- !private ["Ps7CVarArg", "varData"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "wasCalibrated"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "AKAmplitudeTracker"]
+- !private ["Ps28CustomDebugStringConvertible", "AKBooster"]
+- !private ["Ps28CustomDebugStringConvertible", "AKFrequencyTracker"]
+- !private ["Ps28CustomDebugStringConvertible", "AKMicrophone"]
+- !private ["Ps28CustomDebugStringConvertible", "AudioKit"]
+- !private ["Ps28CustomDebugStringConvertible", "Float"]
+- !private ["Ps28CustomDebugStringConvertible", "Timer"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "alertInit"]
+- !private ["Ps28CustomDebugStringConvertible", "ampTracker"]
+- !private ["Ps28CustomDebugStringConvertible", "amplitude"]
+- !private ["Ps28CustomDebugStringConvertible", "avgSum"]
+- !private ["Ps28CustomDebugStringConvertible", "calibratedAvg"]
+- !private ["Ps28CustomDebugStringConvertible", "calibrationSuccessAlert"]
+- ["Ps28CustomDebugStringConvertible", "constants"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- !private ["Ps28CustomDebugStringConvertible", "finishCalibrating"]
+- !private ["Ps28CustomDebugStringConvertible", "freqTracker"]
+- !private ["Ps28CustomDebugStringConvertible", "getAverage"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isCalibratingInput"]
+- !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "listen"]
+- !private ["Ps28CustomDebugStringConvertible", "mic"]
+- !private ["Ps28CustomDebugStringConvertible", "notCalibratedAlert"]
+- !private ["Ps28CustomDebugStringConvertible", "output"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "setThumbImage"]
+- !private ["Ps28CustomDebugStringConvertible", "silence"]
+- !private ["Ps28CustomDebugStringConvertible", "start"]
+- !private ["Ps28CustomDebugStringConvertible", "timeSlider"]
+- !private ["Ps28CustomDebugStringConvertible", "timer"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps28CustomDebugStringConvertible", "varData"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "wasCalibrated"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "AKAmplitudeTracker"]
+- !private ["Ps23CustomStringConvertible", "AKBooster"]
+- !private ["Ps23CustomStringConvertible", "AKFrequencyTracker"]
+- !private ["Ps23CustomStringConvertible", "AKMicrophone"]
+- !private ["Ps23CustomStringConvertible", "AudioKit"]
+- !private ["Ps23CustomStringConvertible", "Float"]
+- !private ["Ps23CustomStringConvertible", "Timer"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "alertInit"]
+- !private ["Ps23CustomStringConvertible", "ampTracker"]
+- !private ["Ps23CustomStringConvertible", "amplitude"]
+- !private ["Ps23CustomStringConvertible", "avgSum"]
+- !private ["Ps23CustomStringConvertible", "calibratedAvg"]
+- !private ["Ps23CustomStringConvertible", "calibrationSuccessAlert"]
+- ["Ps23CustomStringConvertible", "constants"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "dismiss"]
+- !private ["Ps23CustomStringConvertible", "finishCalibrating"]
+- !private ["Ps23CustomStringConvertible", "freqTracker"]
+- !private ["Ps23CustomStringConvertible", "getAverage"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isCalibratingInput"]
+- !private ["Ps23CustomStringConvertible", "isEnabled"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- !private ["Ps23CustomStringConvertible", "listen"]
+- !private ["Ps23CustomStringConvertible", "mic"]
+- !private ["Ps23CustomStringConvertible", "notCalibratedAlert"]
+- !private ["Ps23CustomStringConvertible", "output"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimer"]
+- !private ["Ps23CustomStringConvertible", "setThumbImage"]
+- !private ["Ps23CustomStringConvertible", "silence"]
+- !private ["Ps23CustomStringConvertible", "start"]
+- !private ["Ps23CustomStringConvertible", "timeSlider"]
+- !private ["Ps23CustomStringConvertible", "timer"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Ps23CustomStringConvertible", "varData"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "wasCalibrated"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "AKAmplitudeTracker"]
+- !private ["Ps9Equatable", "AKBooster"]
+- !private ["Ps9Equatable", "AKFrequencyTracker"]
+- !private ["Ps9Equatable", "AKMicrophone"]
+- !private ["Ps9Equatable", "AudioKit"]
+- !private ["Ps9Equatable", "Float"]
+- !private ["Ps9Equatable", "Timer"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "alert"]
+- !private ["Ps9Equatable", "alertInit"]
+- !private ["Ps9Equatable", "ampTracker"]
+- !private ["Ps9Equatable", "amplitude"]
+- !private ["Ps9Equatable", "avgSum"]
+- !private ["Ps9Equatable", "calibratedAvg"]
+- !private ["Ps9Equatable", "calibrationSuccessAlert"]
+- ["Ps9Equatable", "constants"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "dismiss"]
+- !private ["Ps9Equatable", "finishCalibrating"]
+- !private ["Ps9Equatable", "freqTracker"]
+- !private ["Ps9Equatable", "getAverage"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isCalibratingInput"]
+- !private ["Ps9Equatable", "isEnabled"]
+- !private ["Ps9Equatable", "isHidden"]
+- !private ["Ps9Equatable", "listen"]
+- !private ["Ps9Equatable", "mic"]
+- !private ["Ps9Equatable", "normal"]
+- !private ["Ps9Equatable", "notCalibratedAlert"]
+- !private ["Ps9Equatable", "output"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "scheduledTimer"]
+- !private ["Ps9Equatable", "setThumbImage"]
+- !private ["Ps9Equatable", "silence"]
+- !private ["Ps9Equatable", "start"]
+- !private ["Ps9Equatable", "timeSlider"]
+- !private ["Ps9Equatable", "timer"]
+- !private ["Ps9Equatable", "value"]
+- !private ["Ps9Equatable", "varData"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "wasCalibrated"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "AKAmplitudeTracker"]
+- !private ["Ps8Hashable", "AKBooster"]
+- !private ["Ps8Hashable", "AKFrequencyTracker"]
+- !private ["Ps8Hashable", "AKMicrophone"]
+- !private ["Ps8Hashable", "AudioKit"]
+- !private ["Ps8Hashable", "Float"]
+- !private ["Ps8Hashable", "Timer"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "alert"]
+- !private ["Ps8Hashable", "alertInit"]
+- !private ["Ps8Hashable", "ampTracker"]
+- !private ["Ps8Hashable", "amplitude"]
+- !private ["Ps8Hashable", "avgSum"]
+- !private ["Ps8Hashable", "calibratedAvg"]
+- !private ["Ps8Hashable", "calibrationSuccessAlert"]
+- ["Ps8Hashable", "constants"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "dismiss"]
+- !private ["Ps8Hashable", "finishCalibrating"]
+- !private ["Ps8Hashable", "freqTracker"]
+- !private ["Ps8Hashable", "getAverage"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isCalibratingInput"]
+- !private ["Ps8Hashable", "isEnabled"]
+- !private ["Ps8Hashable", "isHidden"]
+- !private ["Ps8Hashable", "listen"]
+- !private ["Ps8Hashable", "mic"]
+- !private ["Ps8Hashable", "notCalibratedAlert"]
+- !private ["Ps8Hashable", "output"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "scheduledTimer"]
+- !private ["Ps8Hashable", "setThumbImage"]
+- !private ["Ps8Hashable", "silence"]
+- !private ["Ps8Hashable", "start"]
+- !private ["Ps8Hashable", "timeSlider"]
+- !private ["Ps8Hashable", "timer"]
+- !private ["Ps8Hashable", "value"]
+- !private ["Ps8Hashable", "varData"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "wasCalibrated"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "AKAmplitudeTracker"]
+- !private ["PSo8NSCoding", "AKBooster"]
+- !private ["PSo8NSCoding", "AKFrequencyTracker"]
+- !private ["PSo8NSCoding", "AKMicrophone"]
+- !private ["PSo8NSCoding", "AudioKit"]
+- !private ["PSo8NSCoding", "Float"]
+- !private ["PSo8NSCoding", "Timer"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "alertInit"]
+- !private ["PSo8NSCoding", "ampTracker"]
+- !private ["PSo8NSCoding", "avgSum"]
+- !private ["PSo8NSCoding", "calibratedAvg"]
+- !private ["PSo8NSCoding", "calibrationSuccessAlert"]
+- ["PSo8NSCoding", "constants"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "dismiss"]
+- !private ["PSo8NSCoding", "finishCalibrating"]
+- !private ["PSo8NSCoding", "freqTracker"]
+- !private ["PSo8NSCoding", "getAverage"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isCalibratingInput"]
+- !private ["PSo8NSCoding", "isEnabled"]
+- !private ["PSo8NSCoding", "isHidden"]
+- !private ["PSo8NSCoding", "listen"]
+- !private ["PSo8NSCoding", "mic"]
+- !private ["PSo8NSCoding", "notCalibratedAlert"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "setThumbImage"]
+- !private ["PSo8NSCoding", "silence"]
+- !private ["PSo8NSCoding", "timeSlider"]
+- !private ["PSo8NSCoding", "timer"]
+- !private ["PSo8NSCoding", "value"]
+- !private ["PSo8NSCoding", "varData"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "wasCalibrated"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "AKAmplitudeTracker"]
+- !private ["PSo26NSExtensionRequestHandling", "AKBooster"]
+- !private ["PSo26NSExtensionRequestHandling", "AKFrequencyTracker"]
+- !private ["PSo26NSExtensionRequestHandling", "AKMicrophone"]
+- !private ["PSo26NSExtensionRequestHandling", "AudioKit"]
+- !private ["PSo26NSExtensionRequestHandling", "Float"]
+- !private ["PSo26NSExtensionRequestHandling", "Timer"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "alertInit"]
+- !private ["PSo26NSExtensionRequestHandling", "ampTracker"]
+- !private ["PSo26NSExtensionRequestHandling", "avgSum"]
+- !private ["PSo26NSExtensionRequestHandling", "calibratedAvg"]
+- !private ["PSo26NSExtensionRequestHandling", "calibrationSuccessAlert"]
+- ["PSo26NSExtensionRequestHandling", "constants"]
+- !private ["PSo26NSExtensionRequestHandling", "count"]
+- !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- !private ["PSo26NSExtensionRequestHandling", "finishCalibrating"]
+- !private ["PSo26NSExtensionRequestHandling", "freqTracker"]
+- !private ["PSo26NSExtensionRequestHandling", "getAverage"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "isCalibratingInput"]
+- !private ["PSo26NSExtensionRequestHandling", "listen"]
+- !private ["PSo26NSExtensionRequestHandling", "mic"]
+- !private ["PSo26NSExtensionRequestHandling", "notCalibratedAlert"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "silence"]
+- !private ["PSo26NSExtensionRequestHandling", "timeSlider"]
+- !private ["PSo26NSExtensionRequestHandling", "timer"]
+- !private ["PSo26NSExtensionRequestHandling", "varData"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "wasCalibrated"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AKAmplitudeTracker"]
+- ["CSo8NSObject", "AKBooster"]
+- ["CSo8NSObject", "AKFrequencyTracker"]
+- ["CSo8NSObject", "AKMicrophone"]
+- !private ["CSo8NSObject", "AudioKit"]
+- ["CSo8NSObject", "Double"]
+- !private ["CSo8NSObject", "Float"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "Timer"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- ["CSo8NSObject", "UIAlertController"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UISlider"]
+- !private ["CSo8NSObject", "addAction"]
+- ["CSo8NSObject", "alertInit"]
+- ["CSo8NSObject", "ampTracker"]
+- !private ["CSo8NSObject", "amplitude"]
+- ["CSo8NSObject", "avgSum"]
+- ["CSo8NSObject", "calibratedAvg"]
+- ["CSo8NSObject", "calibrationSuccessAlert"]
+- ["CSo8NSObject", "constants"]
+- ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "exitVC"]
+- ["CSo8NSObject", "finishCalibrating"]
+- ["CSo8NSObject", "freqTracker"]
+- ["CSo8NSObject", "getAverage"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isCalibratingInput"]
+- !private ["CSo8NSObject", "isEnabled"]
+- !private ["CSo8NSObject", "isHidden"]
+- ["CSo8NSObject", "listen"]
+- ["CSo8NSObject", "mic"]
+- ["CSo8NSObject", "notCalibratedAlert"]
+- !private ["CSo8NSObject", "output"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "scheduledTimer"]
+- !private ["CSo8NSObject", "setThumbImage"]
+- ["CSo8NSObject", "silence"]
+- !private ["CSo8NSObject", "start"]
+- ["CSo8NSObject", "startCalibrating"]
+- ["CSo8NSObject", "timeSlider"]
+- ["CSo8NSObject", "timer"]
+- !private ["CSo8NSObject", "value"]
+- ["CSo8NSObject", "varData"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "wasCalibrated"]
+- !private ["PSo16NSObjectProtocol", "AKAmplitudeTracker"]
+- !private ["PSo16NSObjectProtocol", "AKBooster"]
+- !private ["PSo16NSObjectProtocol", "AKFrequencyTracker"]
+- !private ["PSo16NSObjectProtocol", "AKMicrophone"]
+- !private ["PSo16NSObjectProtocol", "AudioKit"]
+- !private ["PSo16NSObjectProtocol", "Float"]
+- !private ["PSo16NSObjectProtocol", "Timer"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "alertInit"]
+- !private ["PSo16NSObjectProtocol", "ampTracker"]
+- !private ["PSo16NSObjectProtocol", "amplitude"]
+- !private ["PSo16NSObjectProtocol", "avgSum"]
+- !private ["PSo16NSObjectProtocol", "calibratedAvg"]
+- !private ["PSo16NSObjectProtocol", "calibrationSuccessAlert"]
+- ["PSo16NSObjectProtocol", "constants"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "dismiss"]
+- !private ["PSo16NSObjectProtocol", "finishCalibrating"]
+- !private ["PSo16NSObjectProtocol", "freqTracker"]
+- !private ["PSo16NSObjectProtocol", "getAverage"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isCalibratingInput"]
+- !private ["PSo16NSObjectProtocol", "isEnabled"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- !private ["PSo16NSObjectProtocol", "listen"]
+- !private ["PSo16NSObjectProtocol", "mic"]
+- !private ["PSo16NSObjectProtocol", "notCalibratedAlert"]
+- !private ["PSo16NSObjectProtocol", "output"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimer"]
+- !private ["PSo16NSObjectProtocol", "setThumbImage"]
+- !private ["PSo16NSObjectProtocol", "silence"]
+- !private ["PSo16NSObjectProtocol", "start"]
+- !private ["PSo16NSObjectProtocol", "timeSlider"]
+- !private ["PSo16NSObjectProtocol", "timer"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- !private ["PSo16NSObjectProtocol", "varData"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "wasCalibrated"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["P8AudioKit7Numeric", "init"]
+- !private ["P8AudioKit10Occupiable", "init"]
+- !private ["Ps9OptionSet", "normal"]
+- !private ["Ps16RawRepresentable", "alert"]
+- !private ["Ps16RawRepresentable", "default"]
+- !private ["Ps16RawRepresentable", "normal"]
+- !private ["Ps10SetAlgebra", "normal"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["CSo5Timer", "scheduledTimer"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- !private ["PSo29UIAccessibilityIdentification", "setThumbImage"]
+- !private ["PSo29UIAccessibilityIdentification", "value"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "dismiss"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "alert"]
+- !private ["PSo12UIAppearance", "isEnabled"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- !private ["PSo12UIAppearance", "setThumbImage"]
+- !private ["PSo12UIAppearance", "value"]
+- !private ["PSo21UIAppearanceContainer", "AKAmplitudeTracker"]
+- !private ["PSo21UIAppearanceContainer", "AKBooster"]
+- !private ["PSo21UIAppearanceContainer", "AKFrequencyTracker"]
+- !private ["PSo21UIAppearanceContainer", "AKMicrophone"]
+- !private ["PSo21UIAppearanceContainer", "AudioKit"]
+- !private ["PSo21UIAppearanceContainer", "Float"]
+- !private ["PSo21UIAppearanceContainer", "Timer"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "alertInit"]
+- !private ["PSo21UIAppearanceContainer", "ampTracker"]
+- !private ["PSo21UIAppearanceContainer", "avgSum"]
+- !private ["PSo21UIAppearanceContainer", "calibratedAvg"]
+- !private ["PSo21UIAppearanceContainer", "calibrationSuccessAlert"]
+- ["PSo21UIAppearanceContainer", "constants"]
+- !private ["PSo21UIAppearanceContainer", "count"]
+- !private ["PSo21UIAppearanceContainer", "dismiss"]
+- !private ["PSo21UIAppearanceContainer", "finishCalibrating"]
+- !private ["PSo21UIAppearanceContainer", "freqTracker"]
+- !private ["PSo21UIAppearanceContainer", "getAverage"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isCalibratingInput"]
+- !private ["PSo21UIAppearanceContainer", "isEnabled"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- !private ["PSo21UIAppearanceContainer", "listen"]
+- !private ["PSo21UIAppearanceContainer", "mic"]
+- !private ["PSo21UIAppearanceContainer", "notCalibratedAlert"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "setThumbImage"]
+- !private ["PSo21UIAppearanceContainer", "silence"]
+- !private ["PSo21UIAppearanceContainer", "timeSlider"]
+- !private ["PSo21UIAppearanceContainer", "timer"]
+- !private ["PSo21UIAppearanceContainer", "value"]
+- !private ["PSo21UIAppearanceContainer", "varData"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "wasCalibrated"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "AKAmplitudeTracker"]
+- !private ["PSo18UIContentContainer", "AKBooster"]
+- !private ["PSo18UIContentContainer", "AKFrequencyTracker"]
+- !private ["PSo18UIContentContainer", "AKMicrophone"]
+- !private ["PSo18UIContentContainer", "AudioKit"]
+- !private ["PSo18UIContentContainer", "Float"]
+- !private ["PSo18UIContentContainer", "Timer"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "alertInit"]
+- !private ["PSo18UIContentContainer", "ampTracker"]
+- !private ["PSo18UIContentContainer", "avgSum"]
+- !private ["PSo18UIContentContainer", "calibratedAvg"]
+- !private ["PSo18UIContentContainer", "calibrationSuccessAlert"]
+- ["PSo18UIContentContainer", "constants"]
+- !private ["PSo18UIContentContainer", "count"]
+- !private ["PSo18UIContentContainer", "dismiss"]
+- !private ["PSo18UIContentContainer", "finishCalibrating"]
+- !private ["PSo18UIContentContainer", "freqTracker"]
+- !private ["PSo18UIContentContainer", "getAverage"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "isCalibratingInput"]
+- !private ["PSo18UIContentContainer", "listen"]
+- !private ["PSo18UIContentContainer", "mic"]
+- !private ["PSo18UIContentContainer", "notCalibratedAlert"]
+- !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "silence"]
+- !private ["PSo18UIContentContainer", "timeSlider"]
+- !private ["PSo18UIContentContainer", "timer"]
+- !private ["PSo18UIContentContainer", "varData"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "wasCalibrated"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "isEnabled"]
+- !private ["CSo9UIControl", "isHidden"]
+- !private ["CSo9UIControl", "setThumbImage"]
+- !private ["CSo9UIControl", "value"]
+- !private ["VSC14UIControlState", "normal"]
+- !private ["PSo17UICoordinateSpace", "isEnabled"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- !private ["PSo17UICoordinateSpace", "setThumbImage"]
+- !private ["PSo17UICoordinateSpace", "value"]
+- !private ["PSo13UIDynamicItem", "isEnabled"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- !private ["PSo13UIDynamicItem", "setThumbImage"]
+- !private ["PSo13UIDynamicItem", "value"]
+- !private ["PSo18UIFocusEnvironment", "AKAmplitudeTracker"]
+- !private ["PSo18UIFocusEnvironment", "AKBooster"]
+- !private ["PSo18UIFocusEnvironment", "AKFrequencyTracker"]
+- !private ["PSo18UIFocusEnvironment", "AKMicrophone"]
+- !private ["PSo18UIFocusEnvironment", "AudioKit"]
+- !private ["PSo18UIFocusEnvironment", "Float"]
+- !private ["PSo18UIFocusEnvironment", "Timer"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "alertInit"]
+- !private ["PSo18UIFocusEnvironment", "ampTracker"]
+- !private ["PSo18UIFocusEnvironment", "avgSum"]
+- !private ["PSo18UIFocusEnvironment", "calibratedAvg"]
+- !private ["PSo18UIFocusEnvironment", "calibrationSuccessAlert"]
+- ["PSo18UIFocusEnvironment", "constants"]
+- !private ["PSo18UIFocusEnvironment", "count"]
+- !private ["PSo18UIFocusEnvironment", "dismiss"]
+- !private ["PSo18UIFocusEnvironment", "finishCalibrating"]
+- !private ["PSo18UIFocusEnvironment", "freqTracker"]
+- !private ["PSo18UIFocusEnvironment", "getAverage"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isCalibratingInput"]
+- !private ["PSo18UIFocusEnvironment", "isEnabled"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- !private ["PSo18UIFocusEnvironment", "listen"]
+- !private ["PSo18UIFocusEnvironment", "mic"]
+- !private ["PSo18UIFocusEnvironment", "notCalibratedAlert"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "setThumbImage"]
+- !private ["PSo18UIFocusEnvironment", "silence"]
+- !private ["PSo18UIFocusEnvironment", "timeSlider"]
+- !private ["PSo18UIFocusEnvironment", "timer"]
+- !private ["PSo18UIFocusEnvironment", "value"]
+- !private ["PSo18UIFocusEnvironment", "varData"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "wasCalibrated"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "isEnabled"]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- !private ["PSo11UIFocusItem", "setThumbImage"]
+- !private ["PSo11UIFocusItem", "value"]
+- !private ["CSo7UIImage", "init"]
+- ["CSo11UIResponder", "AKAmplitudeTracker"]
+- ["CSo11UIResponder", "AKBooster"]
+- ["CSo11UIResponder", "AKFrequencyTracker"]
+- ["CSo11UIResponder", "AKMicrophone"]
+- !private ["CSo11UIResponder", "AudioKit"]
+- ["CSo11UIResponder", "Double"]
+- !private ["CSo11UIResponder", "Float"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "Timer"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- ["CSo11UIResponder", "UIAlertController"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UISlider"]
+- !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "alertInit"]
+- ["CSo11UIResponder", "ampTracker"]
+- ["CSo11UIResponder", "avgSum"]
+- ["CSo11UIResponder", "calibratedAvg"]
+- ["CSo11UIResponder", "calibrationSuccessAlert"]
+- ["CSo11UIResponder", "constants"]
+- ["CSo11UIResponder", "count"]
+- !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "exitVC"]
+- ["CSo11UIResponder", "finishCalibrating"]
+- ["CSo11UIResponder", "freqTracker"]
+- ["CSo11UIResponder", "getAverage"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isCalibratingInput"]
+- !private ["CSo11UIResponder", "isEnabled"]
+- !private ["CSo11UIResponder", "isHidden"]
+- ["CSo11UIResponder", "listen"]
+- ["CSo11UIResponder", "mic"]
+- ["CSo11UIResponder", "notCalibratedAlert"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "setThumbImage"]
+- ["CSo11UIResponder", "silence"]
+- ["CSo11UIResponder", "startCalibrating"]
+- ["CSo11UIResponder", "timeSlider"]
+- ["CSo11UIResponder", "timer"]
+- !private ["CSo11UIResponder", "value"]
+- ["CSo11UIResponder", "varData"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "wasCalibrated"]
+- !private ["PSo30UIResponderStandardEditActions", "AKAmplitudeTracker"]
+- !private ["PSo30UIResponderStandardEditActions", "AKBooster"]
+- !private ["PSo30UIResponderStandardEditActions", "AKFrequencyTracker"]
+- !private ["PSo30UIResponderStandardEditActions", "AKMicrophone"]
+- !private ["PSo30UIResponderStandardEditActions", "AudioKit"]
+- !private ["PSo30UIResponderStandardEditActions", "Float"]
+- !private ["PSo30UIResponderStandardEditActions", "Timer"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "addAction"]
+- !private ["PSo30UIResponderStandardEditActions", "alertInit"]
+- !private ["PSo30UIResponderStandardEditActions", "ampTracker"]
+- !private ["PSo30UIResponderStandardEditActions", "avgSum"]
+- !private ["PSo30UIResponderStandardEditActions", "calibratedAvg"]
+- !private ["PSo30UIResponderStandardEditActions", "calibrationSuccessAlert"]
+- ["PSo30UIResponderStandardEditActions", "constants"]
+- !private ["PSo30UIResponderStandardEditActions", "count"]
+- !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- !private ["PSo30UIResponderStandardEditActions", "finishCalibrating"]
+- !private ["PSo30UIResponderStandardEditActions", "freqTracker"]
+- !private ["PSo30UIResponderStandardEditActions", "getAverage"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isCalibratingInput"]
+- !private ["PSo30UIResponderStandardEditActions", "isEnabled"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "listen"]
+- !private ["PSo30UIResponderStandardEditActions", "mic"]
+- !private ["PSo30UIResponderStandardEditActions", "notCalibratedAlert"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "setThumbImage"]
+- !private ["PSo30UIResponderStandardEditActions", "silence"]
+- !private ["PSo30UIResponderStandardEditActions", "timeSlider"]
+- !private ["PSo30UIResponderStandardEditActions", "timer"]
+- !private ["PSo30UIResponderStandardEditActions", "value"]
+- !private ["PSo30UIResponderStandardEditActions", "varData"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "wasCalibrated"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo8UISlider", "isEnabled"]
+- !private ["CSo8UISlider", "isHidden"]
+- !private ["CSo8UISlider", "setThumbImage"]
+- !private ["CSo8UISlider", "value"]
+- !private ["PSo16UIStateRestoring", "AKAmplitudeTracker"]
+- !private ["PSo16UIStateRestoring", "AKBooster"]
+- !private ["PSo16UIStateRestoring", "AKFrequencyTracker"]
+- !private ["PSo16UIStateRestoring", "AKMicrophone"]
+- !private ["PSo16UIStateRestoring", "AudioKit"]
+- !private ["PSo16UIStateRestoring", "Float"]
+- !private ["PSo16UIStateRestoring", "Timer"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "alertInit"]
+- !private ["PSo16UIStateRestoring", "ampTracker"]
+- !private ["PSo16UIStateRestoring", "avgSum"]
+- !private ["PSo16UIStateRestoring", "calibratedAvg"]
+- !private ["PSo16UIStateRestoring", "calibrationSuccessAlert"]
+- ["PSo16UIStateRestoring", "constants"]
+- !private ["PSo16UIStateRestoring", "count"]
+- !private ["PSo16UIStateRestoring", "dismiss"]
+- !private ["PSo16UIStateRestoring", "finishCalibrating"]
+- !private ["PSo16UIStateRestoring", "freqTracker"]
+- !private ["PSo16UIStateRestoring", "getAverage"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "isCalibratingInput"]
+- !private ["PSo16UIStateRestoring", "listen"]
+- !private ["PSo16UIStateRestoring", "mic"]
+- !private ["PSo16UIStateRestoring", "notCalibratedAlert"]
+- !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "silence"]
+- !private ["PSo16UIStateRestoring", "timeSlider"]
+- !private ["PSo16UIStateRestoring", "timer"]
+- !private ["PSo16UIStateRestoring", "varData"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "wasCalibrated"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "AKAmplitudeTracker"]
+- !private ["PSo18UITraitEnvironment", "AKBooster"]
+- !private ["PSo18UITraitEnvironment", "AKFrequencyTracker"]
+- !private ["PSo18UITraitEnvironment", "AKMicrophone"]
+- !private ["PSo18UITraitEnvironment", "AudioKit"]
+- !private ["PSo18UITraitEnvironment", "Float"]
+- !private ["PSo18UITraitEnvironment", "Timer"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "alertInit"]
+- !private ["PSo18UITraitEnvironment", "ampTracker"]
+- !private ["PSo18UITraitEnvironment", "avgSum"]
+- !private ["PSo18UITraitEnvironment", "calibratedAvg"]
+- !private ["PSo18UITraitEnvironment", "calibrationSuccessAlert"]
+- ["PSo18UITraitEnvironment", "constants"]
+- !private ["PSo18UITraitEnvironment", "count"]
+- !private ["PSo18UITraitEnvironment", "dismiss"]
+- !private ["PSo18UITraitEnvironment", "finishCalibrating"]
+- !private ["PSo18UITraitEnvironment", "freqTracker"]
+- !private ["PSo18UITraitEnvironment", "getAverage"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isCalibratingInput"]
+- !private ["PSo18UITraitEnvironment", "isEnabled"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- !private ["PSo18UITraitEnvironment", "listen"]
+- !private ["PSo18UITraitEnvironment", "mic"]
+- !private ["PSo18UITraitEnvironment", "notCalibratedAlert"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "setThumbImage"]
+- !private ["PSo18UITraitEnvironment", "silence"]
+- !private ["PSo18UITraitEnvironment", "timeSlider"]
+- !private ["PSo18UITraitEnvironment", "timer"]
+- !private ["PSo18UITraitEnvironment", "value"]
+- !private ["PSo18UITraitEnvironment", "varData"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "wasCalibrated"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "isEnabled"]
+- !private ["CSo6UIView", "isHidden"]
+- !private ["CSo6UIView", "setThumbImage"]
+- !private ["CSo6UIView", "value"]
+- ["CSo16UIViewController", "AKAmplitudeTracker"]
+- ["CSo16UIViewController", "AKBooster"]
+- ["CSo16UIViewController", "AKFrequencyTracker"]
+- ["CSo16UIViewController", "AKMicrophone"]
+- !private ["CSo16UIViewController", "AudioKit"]
+- ["CSo16UIViewController", "Double"]
+- !private ["CSo16UIViewController", "Float"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "Timer"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- ["CSo16UIViewController", "UIAlertController"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UISlider"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "alertInit"]
+- ["CSo16UIViewController", "ampTracker"]
+- ["CSo16UIViewController", "avgSum"]
+- ["CSo16UIViewController", "calibratedAvg"]
+- ["CSo16UIViewController", "calibrationSuccessAlert"]
+- ["CSo16UIViewController", "constants"]
+- ["CSo16UIViewController", "count"]
+- !private ["CSo16UIViewController", "dismiss"]
+- ["CSo16UIViewController", "exitVC"]
+- ["CSo16UIViewController", "finishCalibrating"]
+- ["CSo16UIViewController", "freqTracker"]
+- ["CSo16UIViewController", "getAverage"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "isCalibratingInput"]
+- ["CSo16UIViewController", "listen"]
+- ["CSo16UIViewController", "mic"]
+- ["CSo16UIViewController", "notCalibratedAlert"]
+- !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "silence"]
+- ["CSo16UIViewController", "startCalibrating"]
+- ["CSo16UIViewController", "timeSlider"]
+- ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "varData"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "wasCalibrated"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setThumbImage"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "value"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "AKAmplitudeTracker"]
+- !private ["Ps9_Hashable", "AKBooster"]
+- !private ["Ps9_Hashable", "AKFrequencyTracker"]
+- !private ["Ps9_Hashable", "AKMicrophone"]
+- !private ["Ps9_Hashable", "AudioKit"]
+- !private ["Ps9_Hashable", "Float"]
+- !private ["Ps9_Hashable", "Timer"]
+- !private ["Ps9_Hashable", "UIAlertAction"]
+- !private ["Ps9_Hashable", "UIAlertController"]
+- !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addAction"]
+- !private ["Ps9_Hashable", "alert"]
+- !private ["Ps9_Hashable", "alertInit"]
+- !private ["Ps9_Hashable", "ampTracker"]
+- !private ["Ps9_Hashable", "amplitude"]
+- !private ["Ps9_Hashable", "avgSum"]
+- !private ["Ps9_Hashable", "calibratedAvg"]
+- !private ["Ps9_Hashable", "calibrationSuccessAlert"]
+- ["Ps9_Hashable", "constants"]
+- !private ["Ps9_Hashable", "count"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "dismiss"]
+- !private ["Ps9_Hashable", "finishCalibrating"]
+- !private ["Ps9_Hashable", "freqTracker"]
+- !private ["Ps9_Hashable", "getAverage"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isCalibratingInput"]
+- !private ["Ps9_Hashable", "isEnabled"]
+- !private ["Ps9_Hashable", "isHidden"]
+- !private ["Ps9_Hashable", "listen"]
+- !private ["Ps9_Hashable", "mic"]
+- !private ["Ps9_Hashable", "notCalibratedAlert"]
+- !private ["Ps9_Hashable", "output"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "scheduledTimer"]
+- !private ["Ps9_Hashable", "setThumbImage"]
+- !private ["Ps9_Hashable", "silence"]
+- !private ["Ps9_Hashable", "start"]
+- !private ["Ps9_Hashable", "timeSlider"]
+- !private ["Ps9_Hashable", "timer"]
+- !private ["Ps9_Hashable", "value"]
+- !private ["Ps9_Hashable", "varData"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "wasCalibrated"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps11_Strideable", "init"]
+- ["C11GuitarTuner25calibrationViewController", "AKAmplitudeTracker"]
+- ["C11GuitarTuner25calibrationViewController", "AKBooster"]
+- ["C11GuitarTuner25calibrationViewController", "AKFrequencyTracker"]
+- ["C11GuitarTuner25calibrationViewController", "AKMicrophone"]
+- !private ["C11GuitarTuner25calibrationViewController", "AudioKit"]
+- ["C11GuitarTuner25calibrationViewController", "Double"]
+- !private ["C11GuitarTuner25calibrationViewController", "Float"]
+- ["C11GuitarTuner25calibrationViewController", "Int"]
+- ["C11GuitarTuner25calibrationViewController", "Timer"]
+- !private ["C11GuitarTuner25calibrationViewController", "UIAlertAction"]
+- ["C11GuitarTuner25calibrationViewController", "UIAlertController"]
+- ["C11GuitarTuner25calibrationViewController", "UIButton"]
+- !private ["C11GuitarTuner25calibrationViewController", "UIImage"]
+- ["C11GuitarTuner25calibrationViewController", "UISlider"]
+- ["C11GuitarTuner25calibrationViewController", "alertInit"]
+- ["C11GuitarTuner25calibrationViewController", "ampTracker"]
+- ["C11GuitarTuner25calibrationViewController", "avgSum"]
+- ["C11GuitarTuner25calibrationViewController", "calibratedAvg"]
+- ["C11GuitarTuner25calibrationViewController", "calibrationSuccessAlert"]
+- ["C11GuitarTuner25calibrationViewController", "constants"]
+- ["C11GuitarTuner25calibrationViewController", "count"]
+- ["C11GuitarTuner25calibrationViewController", "deinit"]
+- ["C11GuitarTuner25calibrationViewController", "exitVC"]
+- ["C11GuitarTuner25calibrationViewController", "finishCalibrating"]
+- ["C11GuitarTuner25calibrationViewController", "freqTracker"]
+- ["C11GuitarTuner25calibrationViewController", "getAverage"]
+- ["C11GuitarTuner25calibrationViewController", "init"]
+- ["C11GuitarTuner25calibrationViewController", "isCalibratingInput"]
+- ["C11GuitarTuner25calibrationViewController", "listen"]
+- ["C11GuitarTuner25calibrationViewController", "mic"]
+- ["C11GuitarTuner25calibrationViewController", "notCalibratedAlert"]
+- !private ["C11GuitarTuner25calibrationViewController", "present"]
+- !private ["C11GuitarTuner25calibrationViewController", "print"]
+- ["C11GuitarTuner25calibrationViewController", "silence"]
+- ["C11GuitarTuner25calibrationViewController", "startCalibrating"]
+- ["C11GuitarTuner25calibrationViewController", "timeSlider"]
+- ["C11GuitarTuner25calibrationViewController", "timer"]
+- ["C11GuitarTuner25calibrationViewController", "varData"]
+- ["C11GuitarTuner25calibrationViewController", "viewDidLoad"]
+- ["C11GuitarTuner25calibrationViewController", "wasCalibrated"]
+- !private ["C11GuitarTuner9constants", "amplitudeThreshold"]
+- ["C11GuitarTuner9constants", "sharedInstance"]
+depends-nominal:
+- !private "C8AudioKit18AKAmplitudeTracker"
+- !private "C8AudioKit9AKBooster"
+- !private "P8AudioKit11AKComponent"
+- !private "C8AudioKit18AKFrequencyTracker"
+- !private "C8AudioKit12AKMicrophone"
+- !private "C8AudioKit6AKNode"
+- !private "P8AudioKit11AKParameter"
+- !private "P8AudioKit12AKToggleable"
+- !private "P8AudioKit11AUComponent"
+- !private "Ps16AbsoluteValuable"
+- !private "P8AudioKit7Aliased"
+- "Ps9AnyObject"
+- !private "C8AudioKit8AudioKit"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "P8AudioKit7Numeric"
+- !private "P8AudioKit10Occupiable"
+- !private "Ps9OptionSet"
+- !private "Ps16RawRepresentable"
+- !private "Ps10SetAlgebra"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "CSo5Timer"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UIImage"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo8UISlider"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+- "C11GuitarTuner25calibrationViewController"
+- "C11GuitarTuner9constants"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/GLKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/AudioKit.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlotGL.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDisplayLink.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOfflineRenderer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFluteAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAutoWahAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDCBlockAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKConvolutionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTremoloAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDripAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMetalBarAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKShakerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPannerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClipperAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaserAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBoosterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVocalTractAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClarinetAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/module.modulemap"
+interface-hash: "d5f82a24a3d74ae2253df64fa4ed615b"

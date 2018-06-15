@@ -133,6 +133,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import AudioKit;
+@import CoreGraphics;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -156,73 +159,125 @@ SWIFT_CLASS("_TtC11GuitarTuner11AppDelegate")
 @class AKFrequencyTracker;
 @class AKAmplitudeTracker;
 @class AKBooster;
-@class AKPluckedString;
 @class AKMixer;
+@class AKMIDISampler;
+@class AKNodeRecorder;
+@class AKAudioFile;
+@class AKAudioPlayer;
+@class NSError;
+@class AVAudioNode;
+
+SWIFT_CLASS("_TtC11GuitarTuner11AudioEngine")
+@interface AudioEngine : AKNode
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AudioEngine * _Nonnull sharedInstance;)
++ (AudioEngine * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) AKMicrophone * _Null_unspecified mic;
+@property (nonatomic, strong) AKFrequencyTracker * _Null_unspecified micTracker;
+@property (nonatomic, strong) AKAmplitudeTracker * _Null_unspecified ampTracker;
+@property (nonatomic, strong) AKBooster * _Null_unspecified silence;
+@property (nonatomic, strong) AKMixer * _Null_unspecified micRecordMixer;
+@property (nonatomic, strong) AKMIDISampler * _Null_unspecified riffSampler;
+@property (nonatomic, strong) AKNodeRecorder * _Null_unspecified recorder;
+@property (nonatomic, strong) AKAudioFile * _Null_unspecified fileToStore;
+@property (nonatomic, strong) AKAudioFile * _Null_unspecified fileToPlay;
+@property (nonatomic, strong) AKAudioPlayer * _Null_unspecified filePlayer;
+@property (nonatomic, strong) AKBooster * _Null_unspecified playerBoost;
+@property (nonatomic, strong) AKAmplitudeTracker * _Null_unspecified playerTest;
+@property (nonatomic, strong) AKMixer * _Null_unspecified outputMixer;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull riff;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull noteXPos;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull noteYPos;
+@property (nonatomic, copy) NSString * _Nonnull playedNote;
+@property (nonatomic, copy) NSString * _Nonnull targetNote;
+@property (nonatomic) NSInteger noteStep;
+@property (nonatomic) BOOL correctNote;
+@property (nonatomic) NSInteger numberOfNotes;
+@property (nonatomic) double sum;
+@property (nonatomic) double inputFreq;
+@property (nonatomic) NSInteger selectedRiff;
+@property (nonatomic) BOOL firstOpen;
+@property (nonatomic) BOOL recording;
+@property (nonatomic, copy) NSString * _Null_unspecified currentName;
+@property (nonatomic) double noteFreq;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull riffs;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (void)loadRiff:(NSInteger)riffSelect;
+- (void)noteAnalysis;
+- (double)calculateCents:(double)f1 :(double)f2 SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)checkNote:(NSString * _Nonnull)inputNote :(NSString * _Nonnull)targetNote SWIFT_WARN_UNUSED_RESULT;
+- (void)riffAdvance;
+- (void)audiokitStop;
+- (void)playRiff;
+- (void)beginRecording;
+- (void)stopRecording;
+- (void)storeTrack:(NSString * _Nonnull)name;
+- (void)callbackWithProcessedFile:(AKAudioFile * _Nullable)processedFile error:(NSError * _Nullable)error;
+- (void)loadFile:(NSString * _Nonnull)fileURL;
+- (nonnull instancetype)initWithAvAudioNode:(AVAudioNode * _Nonnull)avAudioNode attach:(BOOL)attach SWIFT_UNAVAILABLE;
+@end
+
+
+@interface UIImageView (SWIFT_EXTENSION(GuitarTuner))
+- (void)flash;
+- (void)stopFlash;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(GuitarTuner))
+- (void)setAnchorPointWithAnchorPoint:(CGPoint)anchorPoint;
+@end
+
+@class UIColor;
+@class UIAlertController;
 @class UILabel;
-@class NSTimer;
 @class EZAudioPlot;
 @class UISlider;
-@class UIView;
 @class UITextField;
-@class UIImageView;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11GuitarTuner14ViewController")
 @interface ViewController : UIViewController
-@property (nonatomic, strong) AKMicrophone * _Null_unspecified mic;
-@property (nonatomic, strong) AKFrequencyTracker * _Null_unspecified micTracker;
-@property (nonatomic, strong) AKAmplitudeTracker * _Null_unspecified ampTracker;
-@property (nonatomic, strong) AKBooster * _Null_unspecified silence;
-@property (nonatomic, strong) AKPluckedString * _Null_unspecified demoGuitar;
-@property (nonatomic, strong) AKMixer * _Null_unspecified outputMixer;
+@property (nonatomic, strong) UIColor * _Null_unspecified boxColour;
+@property (nonatomic, strong) UIAlertController * _Null_unspecified nameAlert;
+@property (nonatomic, strong) UIAlertController * _Null_unspecified recDoneAlert;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified frequencyLabel;
-@property (nonatomic, strong) NSTimer * _Null_unspecified timer;
 @property (nonatomic, weak) IBOutlet EZAudioPlot * _Null_unspecified outputPlot;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified tunerGauge;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified correctNoteBox;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noteStepLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified targetNoteLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified currNoteView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified riffSelect;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified tabView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loopButton;
-@property (nonatomic) BOOL globalLoop;
-@property (nonatomic, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull noteToFreq;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull riff1;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull noteXPos;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull noteYPos;
-@property (nonatomic, copy) NSString * _Nonnull playedNote;
-@property (nonatomic, copy) NSString * _Null_unspecified targetNote;
-@property (nonatomic) NSInteger noteStep;
-@property (nonatomic) BOOL correctNote;
-@property (nonatomic) NSInteger numberOfNotes;
-@property (nonatomic) double sum;
-@property (nonatomic) double inputFreq;
-@property (nonatomic) double frequencyResolution;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull riffs;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified recordButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified threshLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified recordIcon;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified loopIcon;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull riffsList;
+@property (nonatomic, readonly, strong) AudioEngine * _Nonnull audioEngine;
+@property (nonatomic) NSInteger selectedRow;
+@property (nonatomic, copy) NSString * _Nonnull lastText;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)nameAlertInit;
+- (void)recordingDoneAlertInit;
+- (IBAction)recordPressed:(UIButton * _Nonnull)sender;
 - (IBAction)loopButtonPressed:(UIButton * _Nonnull)sender;
-- (void)changeResolution:(float)resValue;
-- (void)playDemoNote:(NSString * _Nonnull)inputNote;
-- (IBAction)playNoteButtonPressed:(UIButton * _Nonnull)sender;
-- (void)playRiff;
 - (IBAction)playRiffButtonPressed:(UIButton * _Nonnull)sender;
-- (void)riffPlaythrough;
-- (void)stopPlay;
-- (void)noteStepIncrease;
-- (void)getInputNote;
-- (void)checkNote:(NSString * _Nonnull)inputNote :(NSString * _Nonnull)targetNote;
-- (void)setupPlot:(BOOL)zoom;
-- (void)loadRiff:(NSInteger)riffSelect;
-- (void)freqList;
-- (double)calculateCents:(double)f1 :(double)f2 SWIFT_WARN_UNUSED_RESULT;
 - (void)riffPicker;
 - (void)createToolbar;
 - (void)dismissKeyboard;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ViewController (SWIFT_EXTENSION(GuitarTuner))
+- (void)moveNoteBoxWithX:(NSInteger)x y:(NSInteger)y;
+- (void)changeNoteName:(NSString * _Nonnull)noteName;
+- (void)changeNoteStep:(NSInteger)noteStep;
 @end
 
 @class UIPickerView;
@@ -234,13 +289,95 @@ SWIFT_CLASS("_TtC11GuitarTuner14ViewController")
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 @end
 
+@class NSTimer;
+
+SWIFT_CLASS("_TtC11GuitarTuner25calibrationViewController")
+@interface calibrationViewController : UIViewController
+@property (nonatomic, strong) AKMicrophone * _Null_unspecified mic;
+@property (nonatomic, strong) AKFrequencyTracker * _Null_unspecified freqTracker;
+@property (nonatomic, strong) AKAmplitudeTracker * _Null_unspecified ampTracker;
+@property (nonatomic, strong) AKBooster * _Null_unspecified silence;
+@property (nonatomic, strong) NSTimer * _Null_unspecified timer;
+@property (nonatomic) NSInteger count;
+@property (nonatomic) double avgSum;
+@property (nonatomic) double calibratedAvg;
+@property (nonatomic) BOOL isCalibratingInput;
+@property (nonatomic) BOOL wasCalibrated;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified timeSlider;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startCalibrating;
+@property (nonatomic, strong) UIAlertController * _Null_unspecified calibrationSuccessAlert;
+@property (nonatomic, strong) UIAlertController * _Null_unspecified notCalibratedAlert;
+- (void)viewDidLoad;
+- (void)alertInit;
+- (void)listen;
+- (void)finishCalibrating;
+- (void)getAverage:(double)input :(NSInteger)count;
+- (IBAction)startCalibrating:(UIButton * _Nonnull)sender;
+- (IBAction)exitVC:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11GuitarTuner19customTableViewCell")
+@interface customTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified deleteButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified playButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified cellView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UIBarButtonItem;
+
+SWIFT_CLASS("_TtC11GuitarTuner18fileViewController")
+@interface fileViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, readonly, strong) AudioEngine * _Nonnull audioEngine;
+@property (nonatomic, copy) NSString * _Null_unspecified fileURL;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)removeFileEx:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)deleteAll:(UIBarButtonItem * _Nonnull)sender;
+- (void)deleteFileWithSender:(UIButton * _Nonnull)sender;
+- (void)loadFileWithSender:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC11GuitarTuner24settingsVCViewController")
 @interface settingsVCViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified greenSelect;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified redSelect;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified blueSelect;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified accuracySlider;
+@property (nonatomic, strong) UIColor * _Nullable boxColour;
 @property (nonatomic, readonly, strong) ViewController * _Nonnull viewController;
 - (void)viewDidLoad;
 - (IBAction)changeResSlider:(UISlider * _Nonnull)sender;
+- (IBAction)changeBoxColour:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11GuitarTuner19tunerViewController")
+@interface tunerViewController : UIViewController
+@property (nonatomic, strong) NSTimer * _Null_unspecified timer;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noteLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pointer;
+@property (nonatomic) double lastValue;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull dataArray;
+- (void)viewDidLoad;
+- (void)updateTuner;
+- (void)pointerRotation:(double)value;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

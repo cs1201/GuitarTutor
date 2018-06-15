@@ -5,6 +5,8 @@
 //  Created by cs1201 on 22/01/2018.
 //  Copyright © 2018 Connor Stoner. All rights reserved.
 //
+//  MAIN APP PAGE VIEWCONTROLLER
+//
 
 import UIKit
 import CoreGraphics
@@ -12,27 +14,13 @@ import AudioKit
 
 class ViewController: UIViewController {
     
-    var mic: AKMicrophone!
-    var micTracker: AKFrequencyTracker!
-    var ampTracker: AKAmplitudeTracker!
-    var silence: AKBooster!
-    
-    var recorder: AKNodeRecorder!
-    var fileToStore: AKAudioFile!
-    
-    var demoGuitar: AKPluckedString!
-    var outputMixer: AKMixer!
-    
-    var riffPlayer: AKSequencer!
-    var track: AKMusicTrack!
     var boxColour: UIColor!
-    var nameAlert: UIAlertController!
+    var nameAlert: UIAlertController! //Alert for naming a recorded file
+    var recDoneAlert: UIAlertController! //Alert for confirming a recorded file
     
-    @IBOutlet weak var frequencyLabel: UILabel!
-    var timer: Timer!
+    @IBOutlet weak var frequencyLabel: UILabel! //UI Elements declarations
     @IBOutlet weak var outputPlot: EZAudioPlot!
     @IBOutlet weak var tunerGauge: UISlider!
-    @IBOutlet weak var correctNoteBox: UIView!
     @IBOutlet weak var noteStepLabel: UILabel!
     @IBOutlet weak var targetNoteLabel: UILabel!
     @IBOutlet weak var currNoteView: UIView!
@@ -40,339 +28,162 @@ class ViewController: UIViewController {
     @IBOutlet weak var tabView: UIImageView!
     @IBOutlet weak var loopButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var threshLabel: UILabel!
+    @IBOutlet weak var recordIcon: UIImageView!
+    @IBOutlet weak var loopIcon: UIImageView!
     
-    //let settingsVC = settingsVCViewController()
-    let constant = constants.sharedInstance
+    
+    var riffsList: [String] = [] //Array to store list of available riffs
+    
+    //Access shared instances of required external classes
+    let varData = constants.sharedInstance
     let recData = recordingData.sharedInstance
-    //var globalLoop = false
-    //var noteToFreq = [String: Double]()
-    var riff1 : [String] = []
-    var noteXPos: [Int] = []
-    var noteYPos: [Int] = []
-    var playedNote = ""
-    var targetNote: String!
-    var noteStep = 1
-    var correctNote = false
-    var numberOfNotes = 0
-    var sum = 0.0
-    var inputFreq = 0.0
-    var selectedRiff: Int?
-    var selectedRow: Int?
-    var firstOpen = true
-    var recording = false
-    let note = noteInfo()
-    var currentName: String!
+    let audioEngine = AudioEngine.sharedInstance
+
+    var selectedRow = 0 //Empty variables to be initialised in viewDidLoad()
+    var lastText = ""
+    var sRiff: Int!
+    var sNoteSt: Int!
     
-    var riffs = ["Smoke on the water",
-                 "Sweet Child o' Mine"]
+    //*****************************************************************
+    // MARK: - PAGE INITIALISATION ON LOADING
+    //*****************************************************************
     
+    //On the page loading
     override func viewDidLoad() {
         
-        tunerGauge.isEnabled = false
-        mic = AKMicrophone()
-        micTracker = AKFrequencyTracker(mic)
-        ampTracker = AKAmplitudeTracker(micTracker)
-        silence = AKBooster(ampTracker, gain: 0)
-        demoGuitar = AKPluckedString()
-        let riffSampler = AKMIDISampler()
-        try! riffSampler.loadWav("Sounds/gtrSample")
-        riffPlayer = AKSequencer()
-        track = riffPlayer.newTrack()
-        riffPlayer.setLength(AKDuration(beats: Double(numberOfNotes)))
-        riffPlayer.setGlobalMIDIOutput(riffSampler.midiIn)
-        outputMixer = AKMixer(demoGuitar, riffSampler, silence)
-        
-        //Recorder and file setup
-        recorder = try? AKNodeRecorder(node: outputMixer)
-        fileToStore = recorder.audioFile
         //Refresh docs in data file
         recData.scanDocuments()
         
-        currNoteView.backgroundColor = constant.boxColour
+        //Update box colour with global setting
+        currNoteView.backgroundColor = varData.boxColour
         
-        if constant.loop{
-            loopButton.backgroundColor = UIColor.green
+        //Update loop icon based on global setting
+        if !varData.loop{
+            loopIcon.image = UIImage(named: "loopOFF.png")
         }
         
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: (#selector(self.getInputNote)), userInfo: nil, repeats: true)
+        //Instantiate delegate to allow audioEngine to trigger UI updates
+        audioEngine.delegate = self
         
-        AudioKit.output = outputMixer
-
+        riffsList = varData.riffsList
+        
         AudioKit.start()
-        //demoGuitar.start()
         
-        setupPlot(true)
-        //freqList()
-        loadRiff(1)
+        //setupPlot(true)
+    
         riffPicker()
         createToolbar()
         nameAlertInit()
+        recordingDoneAlertInit()
         
-        targetNote = riff1[noteStep - 1]
-        noteStepLabel.text = String(noteStep)
-        targetNoteLabel.text = riff1[noteStep - 1]
-        currNoteView.center = CGPoint(x: 80, y: 170)
+        sRiff = varData.storedRiff
+        sNoteSt = varData.storedNoteStep
+        
+        tabView.image = UIImage(named: varData.storedTabImg)
+        targetNoteLabel.text = varData.riffInfo[sRiff].notes[sNoteSt]
+        riffSelect.text = varData.riffsList[sRiff]
+        currNoteView.center = CGPoint(x: varData.riffInfo[sRiff].xPos[sNoteSt] + 25, y: varData.riffInfo[sRiff].yPos[sNoteSt] + 41)
+        //Change TAB View Image to blank prompt! tabView.image = UIImage(named: )
+        currNoteView.isHidden = varData.isNotLoaded
         
         super.viewDidLoad()
         
     }
     
-    @IBAction func goToFiles(_ sender: UIButton) {
-        AudioKit.stop()
+    //Hide navigation bar on this page
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
+
+    //*****************************************************************
+    // MARK: - ALERT INITIALISATIONS
+    //*****************************************************************
     
+    //Initialise name alert for when recording is stopped and recording is saved
     func nameAlertInit(){
-        
+        //Create new alert with relevant name and message
         nameAlert = UIAlertController(title: "Name the track:", message: "No special characters or spaces permitted", preferredStyle: .alert)
-        
-        nameAlert.addTextField { (textField) in
-            textField.text = ""
+        //Default textfield text is blank
+        nameAlert.addTextField { (textField) in textField.text = ""
         }
-        
+        //Action to store track and clear textfield when OK button pressed, dismiss alert
         nameAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            
+            //Get text from textfield
             let textField = self.nameAlert.textFields![0]
-            self.storeTrack(textField.text!)
-            textField.text = ""
+            //Call store track method in audioEngine
+            self.recDoneAlert.message = "Recording \(textField.text!) was saved."
+            self.audioEngine.storeTrack(textField.text!)
+            
+            //Clear txtfield and dismiss alert
             self.nameAlert.dismiss(animated: true, completion: nil)
+            self.present(self.recDoneAlert, animated: true, completion: nil)
+            textField.text = ""
+        }))
+    }
+    //Show user alert to confirm recording is complete and stored with file name
+    func recordingDoneAlertInit(){
+        
+        recDoneAlert = UIAlertController(title: "Success!", message: "Recording \(lastText) was saved", preferredStyle: .alert)
+        
+        recDoneAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+            
+            self.recDoneAlert.dismiss(animated: true, completion: nil)
         }))
     }
     
-    func storeTrack(_ name: String){
-        currentName = name
-        fileToStore.exportAsynchronously(name: currentName!, baseDir: .documents, exportFormat: .mp4, callback: callback)
-    }
-
+    //*****************************************************************
+    // MARK: -UI BUTTON HANDLING
+    //*****************************************************************
     
+    //Recording button pressed
     @IBAction func recordPressed(_ sender: UIButton) {
         
-        if !recording {
-            //DO THIS TO START
-            try? recorder.reset()
+        //To record
+        if !varData.isRecording {
             
-            do{
-                try recorder.record()
-            }catch{
-                print("Could not begin recording")
-            }
+            recordIcon.flash()
+            audioEngine.beginRecording()
             
-            fileToStore = recorder.audioFile
-            
-        }else{
-            //DO THIS TO STOP
-            recorder.stop()
+        }else{ //To stop recording
+            recordIcon.stopFlash()
+            audioEngine.stopRecording()
             self.present(nameAlert, animated: true, completion: nil)
-            
         }
-        
-        recording = !recording
-    }
-    
-    func callback(processedFile: AKAudioFile?, error: NSError?) {
-        print("Export completed!")
-        
-        //Refresh recording list in data file
-        recData.scanDocuments()
-        
-        // Check if processed file is valid (different from nil)
-        if let converted = processedFile {
-            print("Export succeeded, converted file: \(converted.fileNamePlusExtension)")
-            // Print the exported file's duration
-            print("Exported File Duration: \(converted.duration) seconds")
-            // Replace the file being played
-            //try? player.replace(file: converted)
-        } else {
-            // An error occured. So, print the Error
-            print("Error: \(String(describing: error?.localizedDescription))")
-        }
+        //Switch global recording state boolean
+        varData.isRecording = !varData.isRecording
     }
    
+    //Loop button pressed
     @IBAction func loopButtonPressed(_ sender: UIButton) {
         
-        constant.loop = !constant.loop
-        
-        if constant.loop {
-        loopButton.backgroundColor = UIColor.green
+        varData.loop = !varData.loop //Toggle global boolean
+        //Update icon image based on loop state
+        if varData.loop {
+            loopIcon.image = UIImage(named: "loopON.png")
         } else {
-        loopButton.backgroundColor = UIColor.clear
+            loopIcon.image = UIImage(named: "loopOFF.png")
         }
     }
-    
-    func playDemoNote(_ inputNote: String){
-
-        let noteFreq = note.noteList[inputNote]
-        
-        demoGuitar.trigger(frequency: noteFreq!.freq)
-    }
-    
-    @IBAction func playNoteButtonPressed(_ sender: UIButton) {
-        playDemoNote(targetNote)
-        print(targetNote)
-    }
-    
-    func playRiff(){
-        //Stop listening to mic to avoid false pitch readings
-        micTracker.stop()
-        
-        currNoteView.isHidden = true
-        
-        //Stop riffPlayer if already triggered
-        riffPlayer.stop()
-        
-        //Clear sequencer track
-        track?.clear()
-        
-        //set length of sequencer track based on selected riff
-        riffPlayer.setLength(AKDuration(beats: Double(numberOfNotes)))
-
-        //For each note in selected riff, add midi note to sequencer track
-        for i in 1...numberOfNotes{
-            
-            track?.add(noteNumber: MIDINoteNumber(note.noteList[riff1[i-1]]!.midi), velocity: 60, position: AKDuration(beats: Double(i)), duration: AKDuration(beats: 1))
-        }
-        
-        //Play sequencer track
-        riffPlayer.play()
-        
-        //Start listening to mic again once audio finished
-        micTracker.start()
-        
-        //currNoteView.isHidden = false
-        
-        print(riffPlayer.trackCount)
-    }
-    
+    //Trigger audioEngine to play current riff with sequencer
     @IBAction func playRiffButtonPressed(_ sender: UIButton) {
-        playRiff()
+        audioEngine.playRiff()
     }
-    
-    open func riffPlaythrough(){
-        noteStepIncrease()
-        noteStepLabel.text = String(noteStep)
-        targetNoteLabel.text = riff1[noteStep - 1]
-        targetNote = riff1[noteStep - 1]
-        currNoteView.center = CGPoint(x: noteXPos[noteStep-1] + 25, y: noteYPos[noteStep-1] + 41)
-    }
-    
-    func stopPlay(){
-        //Need to stop playback until re-triggered
-    }
-    
-    
-    func noteStepIncrease(){
-        if noteStep <= numberOfNotes - 1{
-            noteStep += 1
-        }
-        else{
-            if constant.loop{
-                noteStep = 1
-            }else{
-                stopPlay()
-            }
-        }
-    }
-    
-    open func getInputNote() {
-        
-        //Constantly check for player stopped to reset and show note box again
-        if riffPlayer.currentPosition.seconds >= riffPlayer.length.seconds*2{
-            riffPlayer.rewind()
-            riffPlayer.stop()
-            currNoteView.isHidden = false
-        }
-        
-        //Only check if mic can hear input
-        if ampTracker.amplitude > 0.001 {
-            
-            inputFreq = micTracker.frequency
-            
-            //Check played note against all frequencies
-            for (noteName, noteFreq) in note.noteList {
-                
-                //Find cent difference
-                let cents = calculateCents(inputFreq, noteFreq.freq)
-                
-                //If played note within 10cent tolerance output played note name
-                if cents < constant.pitchAccuracy && cents > -constant.pitchAccuracy {
-                    playedNote = noteName
-                    frequencyLabel.text = noteName
-                    checkNote(playedNote, targetNote)
-                }
-            }
-        }
-    }
-    
-    
-    open func checkNote(_ inputNote: String, _ targetNote: String){
 
-        if inputNote == targetNote {
-            correctNoteBox.backgroundColor = UIColor.green
-            correctNote = true
-            
-            riffPlaythrough()
-            
-        } else {
-            correctNoteBox.backgroundColor = UIColor.red
-            correctNote = false
-        }
-    }
-    
-    func setupPlot(_ zoom: Bool) {
-        
-        let plot = AKNodeOutputPlot(micTracker, frame: outputPlot.bounds)
-        plot.plotType = .rolling
-        plot.shouldFill = true
-        plot.shouldMirror = true
-        plot.shouldCenterYAxis = true
-        plot.backgroundColor = UIColor.clear
-        plot.color = UIColor.darkGray
-        plot.gain = 3
-        plot.layer.masksToBounds = true
-        //plot.layer.transform = CATransform3DMakeRotation(CGFloat.pi / 2.0, 0, 0, 1)
-        outputPlot.addSubview(plot)
-    }
-    
-    open func loadRiff(_ riffSelect: Int){
-        
-        switch(riffSelect){
-        case 0: //Smoke on the Water
-            //Input note and box position data for riff
-            riff1 = ["E2", "G2", "A2", "E2", "G2", "A#2/Bb2", "A2", "E2", "G2", "A2", "G2", "E2"]
-            noteXPos = [85, 117, 146, 173, 201, 229, 263, 355, 385, 417, 453, 480]
-            noteYPos = [210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210, 210]
-            //Change tab image
-            tabView.image = UIImage(named: "SOTW.png")
-        case 1: //Sweet child o' mine
-            tabView.image = UIImage(named: "SCOM.png")
-            riff1 = ["D4", "D5", "A4", "G4", "G5", "A4", "F#5/Gb5", "A4",
-                     "E4", "D5", "A4", "G4", "G5", "A4", "F#5/Gb5", "A4"]
-            noteXPos = [57, 109, 169, 231, 285, 351, 409, 465,
-                        57, 109, 169, 231, 285, 351, 409, 465]
-            noteYPos = [120, 120, 120, 120, 120, 120, 120, 120,
-                        270, 270, 270, 270, 270, 270, 270, 270]
-        default:
-            break
-        }
-        
-        noteStep = 1
-        targetNote = riff1[0]
-        numberOfNotes = riff1.count
-        currNoteView.center = CGPoint(x: noteXPos[0]+25 , y: noteYPos[0]+41)
-    }
- 
-    func calculateCents(_ f1: Double, _ f2: Double)-> Double{
-        
-        let cents = -1200 * log(f2/f1) / log(2)
-        
-        return cents
-    }
+    //*****************************************************************
+    // MARK: - PICKER VIEW INITIALISATION
+    //*****************************************************************
     
     func riffPicker(){
-        
+        //Picker View initialisation
         let riffPicker = UIPickerView()
         riffPicker.delegate = self
         riffSelect.inputView = riffPicker
     }
     
+    //Create UIToolbar to confirm selection in pickerView
     func createToolbar(){
         
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40))
@@ -388,13 +199,71 @@ class ViewController: UIViewController {
         
     }
     
+    //When riff is selected
     func dismissKeyboard(){
-        loadRiff(selectedRow!)
+        
+        audioEngine.loadRiff(selectedRow) //Load selected riff
+        tabView.image = UIImage(named: varData.imageName[selectedRow]) //Update TAB image
+        noteStepLabel.text = "1"
+        let note2wrt = varData.riffInfo[selectedRow].notes[0]
+        targetNoteLabel.text = String(note2wrt)
+        currNoteView.isHidden = false
+        currNoteView.center = CGPoint(x: varData.riffInfo[selectedRow].xPos[0] + 25, y: varData.riffInfo[selectedRow].yPos[0] + 41)
+        varData.storedRiff = selectedRow //Update global values
+        varData.storedTabImg = varData.imageName[selectedRow]
+        
+        varData.isNotLoaded = false
+
         view.endEditing(true)
     }
-    
 //End of class
 }
+
+//Create Flash animation for Record icon
+extension UIImageView {
+    
+    func flash() {
+        
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.5
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        flash.autoreverses = true
+        flash.repeatDuration = 100000
+        
+        layer.add(flash, forKey: nil)
+    }
+    
+    func stopFlash() {
+        layer.removeAllAnimations()
+    }
+}
+
+//*****************************************************************
+// MARK: - AUDIOENGINE DELEGATE
+//*****************************************************************
+extension ViewController: audioEngineDelegate{
+    
+    //Move note box when correct note recieved
+    func moveNoteBox(x: Int, y: Int) {
+        currNoteView.center = CGPoint(x: x+25, y: y+41)
+    }
+    //Change note label to next target note
+    func changeNoteName(_ noteName: String) {
+        targetNoteLabel.text = noteName
+    }
+    //Update note position identifier
+    func changeNoteStep(_ noteStep: Int) {
+        print(noteStep)
+        noteStepLabel.text = String(noteStep)
+        varData.storedNoteStep = noteStep
+    }
+    
+}
+//*****************************************************************
+// MARK: - PICKER VIEW
+//*****************************************************************
 
 extension ViewController: UIPickerViewDelegate{
     
@@ -403,16 +272,16 @@ extension ViewController: UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return riffs.count
+        return riffsList.count //Access global riff list
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return riffs[row]
+        return riffsList[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedRow = row
-        riffSelect.text = riffs[row]
+        riffSelect.text = riffsList[row]
     }
 }
 

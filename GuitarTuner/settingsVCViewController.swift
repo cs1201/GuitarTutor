@@ -5,6 +5,10 @@
 //  Created by cs1201 on 03/04/2018.
 //  Copyright © 2018 Connor Stoner. All rights reserved.
 //
+//  ViewController for settings page
+//
+//
+
 
 import UIKit
 
@@ -19,38 +23,37 @@ class settingsVCViewController: UIViewController {
     
     var boxColour: UIColor?
     let viewController = ViewController()
-    let constant = constants.sharedInstance
+    let varData = constants.sharedInstance
 
     override func viewDidLoad() {
         
-    accuracySlider.value = Float(constant.pitchAccuracy)
+    //Get global value 
+    accuracySlider.value = Float(varData.pitchAccuracy)
     
     super.viewDidLoad()
     
     }
     
-    
+    //User value change of slider will change global accuracy setting and update
+    // label on this page
     @IBAction func changeResSlider(_ sender: UISlider) {
         
         let sliderValue = sender.value
         resLabel.text = String(Int(sender.value)) + " cents"
         
-        constant.pitchAccuracy = Double(sliderValue)
+        varData.pitchAccuracy = Double(sliderValue)
     }
     
+    //Change note box colour based on user selection by accessing global setting
     @IBAction func changeBoxColour(_ sender: UIButton) {
-        
-        //higlight doesn't do anything. need to make more obvious
         
         switch (sender.tag){
         case 1:
-            constant.boxColour = UIColor.green
-
+            varData.boxColour = UIColor.green
         case 2:
-            constant.boxColour = UIColor.red
-
+            varData.boxColour = UIColor.red
         case 3:
-            constant.boxColour = UIColor.blue
+            varData.boxColour = UIColor.blue
         default:
             break
         }

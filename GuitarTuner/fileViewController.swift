@@ -9,35 +9,33 @@
 import UIKit
 import AudioKit
 
+//ViewController for recording file page
 class fileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    let recData = recordingData.sharedInstance
-    var player: AKAudioPlayer!
-    var fileToPlay: AKAudioFile!
+    @IBOutlet weak var tableView: UITableView! //Declare table view
+    let recData = recordingData.sharedInstance //Access shared instances of required classes
+    let audioEngine = AudioEngine.sharedInstance
     var fileURL: String!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         //Setup tableView delegates
         tableView.delegate = self
         tableView.dataSource = self
-
-        //Dummy audio file initalised with audioPlayer
-        fileToPlay = try? AKAudioFile(readFileName: "dummy.wav", baseDir: .resources)
-        player = try? AKAudioPlayer(file: fileToPlay)
-        
-        AudioKit.output = player
-        AudioKit.start()
+        //Set background image of page
+        let tempImageView = UIImageView(image: UIImage(named: "table_BG.png"))
+        tempImageView.frame = self.tableView.frame
+        self.tableView.backgroundView = tempImageView;
     }
     
-    //Table View Setup
+    //Table View Setup - number of cells derived from accessing file storage
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recData.urlNames.count
     }
     
+    //Create table cells based on custom cell file
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! customTableViewCell
@@ -59,13 +57,10 @@ class fileViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //Delete all files in list if button pressed
     @IBAction func deleteAll(_ sender: UIBarButtonItem) {
-        
         recData.deleteAll()
         tableView.reloadData()
     }
-    
-    
-    
+   
     //Delete file from table view and external array of clips
     func deleteFile(sender: UIButton){
         
@@ -79,21 +74,12 @@ class fileViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
     
+    //Load file URL from global array and trigger audioEngine to begin playback
     func loadFile(sender: UIButton) {
         let index = sender.tag
         
         fileURL = recData.urlNames[index]
-        
-        do{
-            try fileToPlay = AKAudioFile(readFileName: fileURL, baseDir: .documents)
-        }catch{
-            print("could not locate file")
-        }
-        
-        try? player.replace(file: fileToPlay)
-        
-        print("Player should be playing...")
-        player.play()
+        audioEngine.loadFile(fileURL)
         
     }
 }

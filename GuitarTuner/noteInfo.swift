@@ -5,9 +5,14 @@
 //  Created by cs1201 on 07/04/2018.
 //  Copyright © 2018 Connor Stoner. All rights reserved.
 //
+//  Contains globally accessible dictionary for all note names, frequency/midi
+//  values. Utilising a custom data structure to store string, double and Int values
+//
 
 import Foundation
 
+//  Contains globally accessible dictionary for all note names, frequency/midi
+//  values. Utilising a custom data structure to store string, double and Int values
 class noteInfo{
     
     struct noteFreqMidi {

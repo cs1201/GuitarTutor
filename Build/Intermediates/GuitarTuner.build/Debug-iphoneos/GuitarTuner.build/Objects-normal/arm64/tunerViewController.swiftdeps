@@ -1,0 +1,862 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "tunerViewController"
+provides-nominal:
+- "C11GuitarTuner19tunerViewController"
+provides-member:
+- ["C11GuitarTuner19tunerViewController", ""]
+- ["CSo6UIView", ""]
+- ["CSo6UIView", "setAnchorPoint"]
+provides-dynamic-lookup:
+- "dataArray"
+- "lastValue"
+- "noteLabel"
+- "pointer"
+- "pointerRotation"
+- "setAnchorPoint"
+- "timer"
+- "updateTuner"
+- "viewDidLoad"
+depends-top-level:
+- !private "&&"
+- !private "*"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "/"
+- !private "<"
+- !private ">"
+- "Array"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CGFloat"
+- "CGPoint"
+- "Double"
+- "Timer"
+- "UIImageView"
+- "UILabel"
+- "UIView"
+- "UIViewController"
+- "constants"
+- "noteInfo"
+- "tunerViewController"
+depends-member:
+- !private ["P8AudioKit11AKParameter", "pi"]
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps16AbsoluteValuable", "pi"]
+- ["Ps9AnyObject", "Array"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "Timer"]
+- !private ["Ps9AnyObject", "anchorPoint"]
+- !private ["Ps9AnyObject", "bounds"]
+- ["Ps9AnyObject", "constants"]
+- !private ["Ps9AnyObject", "currentCent"]
+- !private ["Ps9AnyObject", "currentNote"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lastValue"]
+- !private ["Ps9AnyObject", "layer"]
+- ["Ps9AnyObject", "noteInfo"]
+- !private ["Ps9AnyObject", "noteLabel"]
+- !private ["Ps9AnyObject", "pointer"]
+- !private ["Ps9AnyObject", "pointerRotation"]
+- !private ["Ps9AnyObject", "position"]
+- !private ["Ps9AnyObject", "scheduledTimer"]
+- !private ["Ps9AnyObject", "setAnchorPoint"]
+- ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "timer"]
+- !private ["Ps9AnyObject", "transform"]
+- !private ["Ps9AnyObject", "updateTuner"]
+- !private ["Ps9AnyObject", "varData"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "init"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps19BinaryFloatingPoint", "pi"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "anchorPoint"]
+- !private ["CSo7CALayer", "position"]
+- !private ["PSo15CALayerDelegate", "CGPoint"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "setAnchorPoint"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "transform"]
+- !private ["PSo13CAMediaTiming", "anchorPoint"]
+- !private ["PSo13CAMediaTiming", "position"]
+- !private ["VSC17CGAffineTransform", "rotated"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC7CGPoint", "applying"]
+- !private ["VSC7CGPoint", "init"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- ["Ps7CVarArg", "Array"]
+- !private ["Ps7CVarArg", "CGFloat"]
+- !private ["Ps7CVarArg", "CGPoint"]
+- !private ["Ps7CVarArg", "Timer"]
+- !private ["Ps7CVarArg", "anchorPoint"]
+- !private ["Ps7CVarArg", "bounds"]
+- ["Ps7CVarArg", "constants"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "lastValue"]
+- !private ["Ps7CVarArg", "layer"]
+- ["Ps7CVarArg", "noteInfo"]
+- !private ["Ps7CVarArg", "noteLabel"]
+- !private ["Ps7CVarArg", "pi"]
+- !private ["Ps7CVarArg", "pointer"]
+- !private ["Ps7CVarArg", "pointerRotation"]
+- !private ["Ps7CVarArg", "position"]
+- !private ["Ps7CVarArg", "scheduledTimer"]
+- !private ["Ps7CVarArg", "setAnchorPoint"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "timer"]
+- !private ["Ps7CVarArg", "transform"]
+- !private ["Ps7CVarArg", "updateTuner"]
+- !private ["Ps7CVarArg", "varData"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "pi"]
+- ["Ps28CustomDebugStringConvertible", "Array"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "Timer"]
+- !private ["Ps28CustomDebugStringConvertible", "anchorPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "applying"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- ["Ps28CustomDebugStringConvertible", "constants"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lastValue"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "noteInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "noteLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "pi"]
+- !private ["Ps28CustomDebugStringConvertible", "pointer"]
+- !private ["Ps28CustomDebugStringConvertible", "pointerRotation"]
+- !private ["Ps28CustomDebugStringConvertible", "position"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduledTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "setAnchorPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "timer"]
+- !private ["Ps28CustomDebugStringConvertible", "transform"]
+- !private ["Ps28CustomDebugStringConvertible", "updateTuner"]
+- !private ["Ps28CustomDebugStringConvertible", "varData"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "applying"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "pi"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "x"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "applying"]
+- !private ["Ps17CustomReflectable", "height"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "pi"]
+- !private ["Ps17CustomReflectable", "size"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps17CustomReflectable", "x"]
+- !private ["Ps17CustomReflectable", "y"]
+- ["Ps23CustomStringConvertible", "Array"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "CGPoint"]
+- !private ["Ps23CustomStringConvertible", "Timer"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "anchorPoint"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- ["Ps23CustomStringConvertible", "constants"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lastValue"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "noteInfo"]
+- !private ["Ps23CustomStringConvertible", "noteLabel"]
+- !private ["Ps23CustomStringConvertible", "pi"]
+- !private ["Ps23CustomStringConvertible", "pointer"]
+- !private ["Ps23CustomStringConvertible", "pointerRotation"]
+- !private ["Ps23CustomStringConvertible", "position"]
+- !private ["Ps23CustomStringConvertible", "scheduledTimer"]
+- !private ["Ps23CustomStringConvertible", "setAnchorPoint"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "timer"]
+- !private ["Ps23CustomStringConvertible", "transform"]
+- !private ["Ps23CustomStringConvertible", "updateTuner"]
+- !private ["Ps23CustomStringConvertible", "varData"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "pi"]
+- ["Ps9Equatable", "Array"]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "CGPoint"]
+- !private ["Ps9Equatable", "Timer"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "anchorPoint"]
+- !private ["Ps9Equatable", "applying"]
+- !private ["Ps9Equatable", "bounds"]
+- ["Ps9Equatable", "constants"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lastValue"]
+- !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "noteInfo"]
+- !private ["Ps9Equatable", "noteLabel"]
+- !private ["Ps9Equatable", "pi"]
+- !private ["Ps9Equatable", "pointer"]
+- !private ["Ps9Equatable", "pointerRotation"]
+- !private ["Ps9Equatable", "position"]
+- !private ["Ps9Equatable", "rotated"]
+- !private ["Ps9Equatable", "scheduledTimer"]
+- !private ["Ps9Equatable", "setAnchorPoint"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "timer"]
+- !private ["Ps9Equatable", "transform"]
+- !private ["Ps9Equatable", "updateTuner"]
+- !private ["Ps9Equatable", "varData"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
+- ["Ps9Equatable", ""]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "pi"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "pi"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps13FloatingPoint", "pi"]
+- ["Ps8Hashable", "Array"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "CGPoint"]
+- !private ["Ps8Hashable", "Timer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "anchorPoint"]
+- !private ["Ps8Hashable", "bounds"]
+- ["Ps8Hashable", "constants"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lastValue"]
+- !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "noteInfo"]
+- !private ["Ps8Hashable", "noteLabel"]
+- !private ["Ps8Hashable", "pi"]
+- !private ["Ps8Hashable", "pointer"]
+- !private ["Ps8Hashable", "pointerRotation"]
+- !private ["Ps8Hashable", "position"]
+- !private ["Ps8Hashable", "scheduledTimer"]
+- !private ["Ps8Hashable", "setAnchorPoint"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "timer"]
+- !private ["Ps8Hashable", "transform"]
+- !private ["Ps8Hashable", "updateTuner"]
+- !private ["Ps8Hashable", "varData"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "pi"]
+- ["Ps17MutableCollection", "init"]
+- ["PSo8NSCoding", "Array"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "CGPoint"]
+- !private ["PSo8NSCoding", "Timer"]
+- !private ["PSo8NSCoding", "anchorPoint"]
+- !private ["PSo8NSCoding", "bounds"]
+- ["PSo8NSCoding", "constants"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lastValue"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "noteInfo"]
+- !private ["PSo8NSCoding", "noteLabel"]
+- !private ["PSo8NSCoding", "pointer"]
+- !private ["PSo8NSCoding", "pointerRotation"]
+- !private ["PSo8NSCoding", "position"]
+- !private ["PSo8NSCoding", "setAnchorPoint"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "timer"]
+- !private ["PSo8NSCoding", "transform"]
+- !private ["PSo8NSCoding", "updateTuner"]
+- !private ["PSo8NSCoding", "varData"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "Array"]
+- !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
+- !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
+- !private ["PSo26NSExtensionRequestHandling", "Timer"]
+- ["PSo26NSExtensionRequestHandling", "constants"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "lastValue"]
+- ["PSo26NSExtensionRequestHandling", "noteInfo"]
+- !private ["PSo26NSExtensionRequestHandling", "noteLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "pointer"]
+- !private ["PSo26NSExtensionRequestHandling", "pointerRotation"]
+- !private ["PSo26NSExtensionRequestHandling", "timer"]
+- !private ["PSo26NSExtensionRequestHandling", "updateTuner"]
+- !private ["PSo26NSExtensionRequestHandling", "varData"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Array"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Timer"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "anchorPoint"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "constants"]
+- ["CSo8NSObject", "dataArray"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "lastValue"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "note"]
+- ["CSo8NSObject", "noteInfo"]
+- ["CSo8NSObject", "noteLabel"]
+- ["CSo8NSObject", "pointer"]
+- ["CSo8NSObject", "pointerRotation"]
+- !private ["CSo8NSObject", "position"]
+- !private ["CSo8NSObject", "scheduledTimer"]
+- ["CSo8NSObject", "setAnchorPoint"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "timer"]
+- !private ["CSo8NSObject", "transform"]
+- ["CSo8NSObject", "updateTuner"]
+- ["CSo8NSObject", "varData"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Array"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGPoint"]
+- !private ["PSo16NSObjectProtocol", "Timer"]
+- !private ["PSo16NSObjectProtocol", "anchorPoint"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "constants"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lastValue"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "noteInfo"]
+- !private ["PSo16NSObjectProtocol", "noteLabel"]
+- !private ["PSo16NSObjectProtocol", "pointer"]
+- !private ["PSo16NSObjectProtocol", "pointerRotation"]
+- !private ["PSo16NSObjectProtocol", "position"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimer"]
+- !private ["PSo16NSObjectProtocol", "setAnchorPoint"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "timer"]
+- !private ["PSo16NSObjectProtocol", "transform"]
+- !private ["PSo16NSObjectProtocol", "updateTuner"]
+- !private ["PSo16NSObjectProtocol", "varData"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["P8AudioKit7Numeric", "pi"]
+- ["P8AudioKit10Occupiable", "init"]
+- ["Ps22RandomAccessCollection", "init"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps12SignedNumber", "pi"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "pi"]
+- !private ["CSo5Timer", "scheduledTimer"]
+- !private ["PSo29UIAccessibilityIdentification", "CGPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "setAnchorPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "transform"]
+- !private ["PSo12UIAppearance", "CGPoint"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "setAnchorPoint"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "transform"]
+- ["PSo21UIAppearanceContainer", "Array"]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
+- !private ["PSo21UIAppearanceContainer", "CGPoint"]
+- !private ["PSo21UIAppearanceContainer", "Timer"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "constants"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "lastValue"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "noteInfo"]
+- !private ["PSo21UIAppearanceContainer", "noteLabel"]
+- !private ["PSo21UIAppearanceContainer", "pointer"]
+- !private ["PSo21UIAppearanceContainer", "pointerRotation"]
+- !private ["PSo21UIAppearanceContainer", "setAnchorPoint"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "timer"]
+- !private ["PSo21UIAppearanceContainer", "transform"]
+- !private ["PSo21UIAppearanceContainer", "updateTuner"]
+- !private ["PSo21UIAppearanceContainer", "varData"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Array"]
+- !private ["PSo18UIContentContainer", "CGFloat"]
+- !private ["PSo18UIContentContainer", "CGPoint"]
+- !private ["PSo18UIContentContainer", "Timer"]
+- ["PSo18UIContentContainer", "constants"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "lastValue"]
+- ["PSo18UIContentContainer", "noteInfo"]
+- !private ["PSo18UIContentContainer", "noteLabel"]
+- !private ["PSo18UIContentContainer", "pointer"]
+- !private ["PSo18UIContentContainer", "pointerRotation"]
+- !private ["PSo18UIContentContainer", "timer"]
+- !private ["PSo18UIContentContainer", "updateTuner"]
+- !private ["PSo18UIContentContainer", "varData"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "CGPoint"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "setAnchorPoint"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "transform"]
+- !private ["PSo13UIDynamicItem", "CGPoint"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "setAnchorPoint"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "transform"]
+- ["PSo18UIFocusEnvironment", "Array"]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "CGPoint"]
+- !private ["PSo18UIFocusEnvironment", "Timer"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "constants"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "lastValue"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "noteInfo"]
+- !private ["PSo18UIFocusEnvironment", "noteLabel"]
+- !private ["PSo18UIFocusEnvironment", "pointer"]
+- !private ["PSo18UIFocusEnvironment", "pointerRotation"]
+- !private ["PSo18UIFocusEnvironment", "setAnchorPoint"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "timer"]
+- !private ["PSo18UIFocusEnvironment", "transform"]
+- !private ["PSo18UIFocusEnvironment", "updateTuner"]
+- !private ["PSo18UIFocusEnvironment", "varData"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "CGPoint"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "setAnchorPoint"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "transform"]
+- !private ["CSo11UIImageView", "setAnchorPoint"]
+- !private ["CSo11UIImageView", "transform"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Array"]
+- !private ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "CGPoint"]
+- ["CSo11UIResponder", "Double"]
+- ["CSo11UIResponder", "Timer"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "constants"]
+- ["CSo11UIResponder", "dataArray"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "lastValue"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "note"]
+- ["CSo11UIResponder", "noteInfo"]
+- ["CSo11UIResponder", "noteLabel"]
+- ["CSo11UIResponder", "pointer"]
+- ["CSo11UIResponder", "pointerRotation"]
+- ["CSo11UIResponder", "setAnchorPoint"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "timer"]
+- !private ["CSo11UIResponder", "transform"]
+- ["CSo11UIResponder", "updateTuner"]
+- ["CSo11UIResponder", "varData"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "Array"]
+- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
+- !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "Timer"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- ["PSo30UIResponderStandardEditActions", "constants"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "lastValue"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- ["PSo30UIResponderStandardEditActions", "noteInfo"]
+- !private ["PSo30UIResponderStandardEditActions", "noteLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "pointer"]
+- !private ["PSo30UIResponderStandardEditActions", "pointerRotation"]
+- !private ["PSo30UIResponderStandardEditActions", "setAnchorPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "timer"]
+- !private ["PSo30UIResponderStandardEditActions", "transform"]
+- !private ["PSo30UIResponderStandardEditActions", "updateTuner"]
+- !private ["PSo30UIResponderStandardEditActions", "varData"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "Array"]
+- !private ["PSo16UIStateRestoring", "CGFloat"]
+- !private ["PSo16UIStateRestoring", "CGPoint"]
+- !private ["PSo16UIStateRestoring", "Timer"]
+- ["PSo16UIStateRestoring", "constants"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "lastValue"]
+- ["PSo16UIStateRestoring", "noteInfo"]
+- !private ["PSo16UIStateRestoring", "noteLabel"]
+- !private ["PSo16UIStateRestoring", "pointer"]
+- !private ["PSo16UIStateRestoring", "pointerRotation"]
+- !private ["PSo16UIStateRestoring", "timer"]
+- !private ["PSo16UIStateRestoring", "updateTuner"]
+- !private ["PSo16UIStateRestoring", "varData"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Array"]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
+- !private ["PSo18UITraitEnvironment", "CGPoint"]
+- !private ["PSo18UITraitEnvironment", "Timer"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "constants"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "lastValue"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "noteInfo"]
+- !private ["PSo18UITraitEnvironment", "noteLabel"]
+- !private ["PSo18UITraitEnvironment", "pointer"]
+- !private ["PSo18UITraitEnvironment", "pointerRotation"]
+- !private ["PSo18UITraitEnvironment", "setAnchorPoint"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "timer"]
+- !private ["PSo18UITraitEnvironment", "transform"]
+- !private ["PSo18UITraitEnvironment", "updateTuner"]
+- !private ["PSo18UITraitEnvironment", "varData"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGPoint"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "setAnchorPoint"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "transform"]
+- ["CSo16UIViewController", "Array"]
+- !private ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "CGPoint"]
+- ["CSo16UIViewController", "Double"]
+- ["CSo16UIViewController", "Timer"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "constants"]
+- ["CSo16UIViewController", "dataArray"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "lastValue"]
+- ["CSo16UIViewController", "note"]
+- ["CSo16UIViewController", "noteInfo"]
+- ["CSo16UIViewController", "noteLabel"]
+- ["CSo16UIViewController", "pointer"]
+- ["CSo16UIViewController", "pointerRotation"]
+- ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "updateTuner"]
+- ["CSo16UIViewController", "varData"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["Ps14_ArrayProtocol", "init"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps15_CVarArgAligned", "pi"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "pi"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setAnchorPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "transform"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "pi"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "pi"]
+- ["Ps9_Hashable", "Array"]
+- !private ["Ps9_Hashable", "CGFloat"]
+- !private ["Ps9_Hashable", "CGPoint"]
+- !private ["Ps9_Hashable", "Timer"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "anchorPoint"]
+- !private ["Ps9_Hashable", "bounds"]
+- ["Ps9_Hashable", "constants"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "lastValue"]
+- !private ["Ps9_Hashable", "layer"]
+- ["Ps9_Hashable", "noteInfo"]
+- !private ["Ps9_Hashable", "noteLabel"]
+- !private ["Ps9_Hashable", "pi"]
+- !private ["Ps9_Hashable", "pointer"]
+- !private ["Ps9_Hashable", "pointerRotation"]
+- !private ["Ps9_Hashable", "position"]
+- !private ["Ps9_Hashable", "scheduledTimer"]
+- !private ["Ps9_Hashable", "setAnchorPoint"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "timer"]
+- !private ["Ps9_Hashable", "transform"]
+- !private ["Ps9_Hashable", "updateTuner"]
+- !private ["Ps9_Hashable", "varData"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- ["Ps10_Indexable", "init"]
+- ["Ps14_IndexableBase", "init"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "applying"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "pi"]
+- !private ["Ps21_ObjectiveCBridgeable", "rotated"]
+- !private ["Ps21_ObjectiveCBridgeable", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps21_ObjectiveCBridgeable", "x"]
+- !private ["Ps21_ObjectiveCBridgeable", "y"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps11_Strideable", "pi"]
+- !private ["C11GuitarTuner9constants", "currentCent"]
+- !private ["C11GuitarTuner9constants", "currentNote"]
+- ["C11GuitarTuner9constants", "sharedInstance"]
+- ["C11GuitarTuner8noteInfo", "init"]
+- ["C11GuitarTuner19tunerViewController", "Array"]
+- !private ["C11GuitarTuner19tunerViewController", "CGFloat"]
+- !private ["C11GuitarTuner19tunerViewController", "CGPoint"]
+- ["C11GuitarTuner19tunerViewController", "Double"]
+- ["C11GuitarTuner19tunerViewController", "Timer"]
+- ["C11GuitarTuner19tunerViewController", "UIImageView"]
+- ["C11GuitarTuner19tunerViewController", "UILabel"]
+- ["C11GuitarTuner19tunerViewController", "constants"]
+- ["C11GuitarTuner19tunerViewController", "dataArray"]
+- ["C11GuitarTuner19tunerViewController", "deinit"]
+- ["C11GuitarTuner19tunerViewController", "init"]
+- ["C11GuitarTuner19tunerViewController", "lastValue"]
+- ["C11GuitarTuner19tunerViewController", "note"]
+- ["C11GuitarTuner19tunerViewController", "noteInfo"]
+- ["C11GuitarTuner19tunerViewController", "noteLabel"]
+- ["C11GuitarTuner19tunerViewController", "pointer"]
+- ["C11GuitarTuner19tunerViewController", "pointerRotation"]
+- ["C11GuitarTuner19tunerViewController", "timer"]
+- ["C11GuitarTuner19tunerViewController", "updateTuner"]
+- ["C11GuitarTuner19tunerViewController", "varData"]
+- ["C11GuitarTuner19tunerViewController", "viewDidLoad"]
+depends-nominal:
+- !private "P8AudioKit11AKParameter"
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
+- !private "VSC17CGAffineTransform"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "P8AudioKit7Numeric"
+- "P8AudioKit10Occupiable"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "CSo5Timer"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "CSo16UIViewController"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+- !private "Ps11_Strideable"
+- "C11GuitarTuner9constants"
+- "C11GuitarTuner8noteInfo"
+- "C11GuitarTuner19tunerViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/AudioKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlotGL.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDisplayLink.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOfflineRenderer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFluteAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAutoWahAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDCBlockAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKConvolutionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTremoloAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDripAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMetalBarAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKShakerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPannerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClipperAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaserAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBoosterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVocalTractAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClarinetAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/module.modulemap"
+interface-hash: "85f2cabb36dd0300adcebc219883bf4f"

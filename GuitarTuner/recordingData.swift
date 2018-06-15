@@ -5,6 +5,9 @@
 //  Created by cs1201 on 11/04/2018.
 //  Copyright © 2018 Connor Stoner. All rights reserved.
 //
+//  This class handles the access to internal app file storage and the update 
+//  and deletion of stored recordings
+//
 
 import Foundation
 
@@ -12,10 +15,10 @@ class recordingData {
     
     static let sharedInstance = recordingData()
     
-    var urlNames = [String]()
-    //var urlPaths = [String]()
-    var fileManager = FileManager.default
-    var docURL: String!
+    var urlNames = [String]() //Array for file paths
+    var fileManager = FileManager.default //To access internal app file storage
+    var docURL: String! //To store documents directory URL/filepath
+    
     
     func scanDocuments(){
         //Find URL of documents directory for application
@@ -56,7 +59,7 @@ class recordingData {
                 print("Could not delete file")
             }
         }
+        //Re scan file name array to reinstate present files
         scanDocuments()
-        
     }
 }

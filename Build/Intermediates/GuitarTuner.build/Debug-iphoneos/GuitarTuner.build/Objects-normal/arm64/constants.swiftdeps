@@ -1,0 +1,322 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "constants"
+provides-nominal:
+- "C11GuitarTuner9constants"
+- "VC11GuitarTuner9constants7notePos"
+provides-member:
+- ["C11GuitarTuner9constants", ""]
+- ["VC11GuitarTuner9constants7notePos", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "Int"
+- "String"
+- "StringLiteralType"
+- "UIColor"
+- "constants"
+depends-member:
+- ["Ps9AnyObject", "UIColor"]
+- ["Ps9AnyObject", "constants"]
+- ["Ps9AnyObject", "green"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "notePos"]
+- !private ["Ps9AnyObject", "riff0"]
+- !private ["Ps9AnyObject", "riff0_x"]
+- !private ["Ps9AnyObject", "riff0_y"]
+- !private ["Ps9AnyObject", "riff1"]
+- !private ["Ps9AnyObject", "riff1_x"]
+- !private ["Ps9AnyObject", "riff1_y"]
+- !private ["Ps9AnyObject", "riff2"]
+- !private ["Ps9AnyObject", "riff2_x"]
+- !private ["Ps9AnyObject", "riff2_y"]
+- !private ["Ps9AnyObject", "riff3"]
+- !private ["Ps9AnyObject", "riff3_x"]
+- !private ["Ps9AnyObject", "riff3_y"]
+- !private ["Ps9AnyObject", "riff4"]
+- !private ["Ps9AnyObject", "riff4_x"]
+- !private ["Ps9AnyObject", "riff4_y"]
+- !private ["Ps9AnyObject", "riffInfo"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "init"]
+- ["Ps23BidirectionalCollection", "init"]
+- ["Ps7CVarArg", "green"]
+- ["Ps7CVarArg", "init"]
+- ["Ps10Collection", "init"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "green"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "green"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps9Equatable", "green"]
+- ["Ps9Equatable", "init"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "green"]
+- ["Ps8Hashable", "init"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "init"]
+- ["PSo8NSCoding", "green"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "green"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "green"]
+- ["PSo16NSObjectProtocol", "green"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "green"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["P8AudioKit10Occupiable", "init"]
+- ["Ps22RandomAccessCollection", "init"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- ["Ps8Sequence", "init"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["CSo7UIColor", "green"]
+- ["Ps14_ArrayProtocol", "init"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "green"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "green"]
+- ["Ps9_Hashable", "init"]
+- ["Ps10_Indexable", "init"]
+- ["Ps14_IndexableBase", "init"]
+- ["Ps17_MutableIndexable", "init"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- ["C11GuitarTuner9constants", "Int"]
+- ["C11GuitarTuner9constants", "String"]
+- ["C11GuitarTuner9constants", "UIColor"]
+- ["C11GuitarTuner9constants", "amplitudeThreshold"]
+- ["C11GuitarTuner9constants", "boxColour"]
+- ["C11GuitarTuner9constants", "constants"]
+- ["C11GuitarTuner9constants", "currentCent"]
+- ["C11GuitarTuner9constants", "currentNote"]
+- ["C11GuitarTuner9constants", "deinit"]
+- ["C11GuitarTuner9constants", "imageName"]
+- ["C11GuitarTuner9constants", "init"]
+- ["C11GuitarTuner9constants", "isNotLoaded"]
+- ["C11GuitarTuner9constants", "isRecording"]
+- ["C11GuitarTuner9constants", "loop"]
+- ["C11GuitarTuner9constants", "notePos"]
+- ["C11GuitarTuner9constants", "pitchAccuracy"]
+- ["C11GuitarTuner9constants", "riff0"]
+- ["C11GuitarTuner9constants", "riff0_x"]
+- ["C11GuitarTuner9constants", "riff0_y"]
+- ["C11GuitarTuner9constants", "riff1"]
+- ["C11GuitarTuner9constants", "riff1_x"]
+- ["C11GuitarTuner9constants", "riff1_y"]
+- ["C11GuitarTuner9constants", "riff2"]
+- ["C11GuitarTuner9constants", "riff2_x"]
+- ["C11GuitarTuner9constants", "riff2_y"]
+- ["C11GuitarTuner9constants", "riff3"]
+- ["C11GuitarTuner9constants", "riff3_x"]
+- ["C11GuitarTuner9constants", "riff3_y"]
+- ["C11GuitarTuner9constants", "riff4"]
+- ["C11GuitarTuner9constants", "riff4_x"]
+- ["C11GuitarTuner9constants", "riff4_y"]
+- ["C11GuitarTuner9constants", "riffInfo"]
+- ["C11GuitarTuner9constants", "riffsList"]
+- ["C11GuitarTuner9constants", "sharedInstance"]
+- ["C11GuitarTuner9constants", "storedNoteStep"]
+- ["C11GuitarTuner9constants", "storedRiff"]
+- ["C11GuitarTuner9constants", "storedTabImg"]
+- ["C11GuitarTuner9constants", "targetNote"]
+- ["VC11GuitarTuner9constants7notePos", "Int"]
+- ["VC11GuitarTuner9constants7notePos", "String"]
+- ["VC11GuitarTuner9constants7notePos", "init"]
+- ["VC11GuitarTuner9constants7notePos", "notes"]
+- ["VC11GuitarTuner9constants7notePos", "xPos"]
+- ["VC11GuitarTuner9constants7notePos", "yPos"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "P8AudioKit10Occupiable"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "CSo7UIColor"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- "Ps24_DestructorSafeContainer"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+- "C11GuitarTuner9constants"
+- "VC11GuitarTuner9constants7notePos"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AudioToolbox.apinotesc"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/AudioKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlotGL.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioDisplayLink.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOfflineRenderer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFluteAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAutoWahAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDCBlockAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKConvolutionAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTremoloAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDripAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMetalBarAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKShakerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPannerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClipperAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaserAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKBoosterAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVocalTractAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKClarinetAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZAudioPlot.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/Connor/Documents/Developer/GuitarTuner/AudioKit.framework/Modules/module.modulemap"
+interface-hash: "3f088c99100aea0f894ec6fda2cf6749"

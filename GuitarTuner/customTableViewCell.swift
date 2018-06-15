@@ -5,6 +5,9 @@
 //  Created by cs1201 on 11/04/2018.
 //  Copyright © 2018 Connor Stoner. All rights reserved.
 //
+//  Defines UI elements of the custom table cell to be used in the
+//  recording files page
+//
 
 import UIKit
 
